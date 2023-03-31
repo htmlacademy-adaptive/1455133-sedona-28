@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="../source/img/header-logo.svg" alt="Город Седона.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item main-nav__list-item--active">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="form.html">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Городок Седона - лучший выбор для туриста</h1>
+      <section class="hero-block">
+        <img class="hero-block__image" alt="Седона" src="../source/img/hero-sedona.svg">
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Причины, по которым стоит посетить город</h2>
+        <div class="advantages__wrapper">
+          <h3 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
+          <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
+      </section>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+    </main>
   </body>
 </html>
