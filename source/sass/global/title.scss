@@ -1,0 +1,27 @@
+.title {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  &--have-image {
+    color: #ffffff;
+  }
+
+  &--non-list {
+    margin-bottom: 35px;
+  }
+
+  &--list {
+    margin-bottom: 60px;
+  }
+
+  &--sublist {
+    margin-bottom: 16px;
+  }
+
+}
