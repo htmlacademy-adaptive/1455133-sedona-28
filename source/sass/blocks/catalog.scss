@@ -1,0 +1,44 @@
+.catalog {
+  // display: grid;
+}
+
+.catalog__introduction {
+  padding: 37px 20px 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.introduction__title {
+  margin-bottom: 36px;
+}
+
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__item {
+  padding: 24px 20px 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo-cards__image {
+  margin-bottom: 15px;
+}
+
+.card-description__like-quantity {
+  display: block;
+}
+
+.video__title {
+  padding-top: 17px;
+  padding-bottom: 40px;
+}
+
+.video__text {
+  padding-bottom: 38px;
+}
+
+.video__preview {
+  padding: 0 20px;
+}

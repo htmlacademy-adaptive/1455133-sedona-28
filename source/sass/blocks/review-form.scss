@@ -1,0 +1,36 @@
+.review__form {
+  // display: grid;
+  margin-bottom: 22px;
+}
+
+.review__form--review-kit {
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: 24px;
+}
+
+.review__form-emotion {
+  margin-bottom: 32px;
+  border: none;
+}
+
+.review__list {
+  list-style-type: none;
+}
+
+
+.review__form-data {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.review__form-help {
+  display: block;
+  font-family: "PT Sans", sans-serif;
+  font-size: 12px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
