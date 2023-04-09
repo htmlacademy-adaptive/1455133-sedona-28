@@ -1,0 +1,19 @@
+.text-description {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  &--have-image {
+    color: #ffffff;
+  }
+
+  &--card-description {
+    text-transform: none;
+    text-align: left;
+  }
+}

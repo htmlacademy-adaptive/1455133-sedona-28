@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+@import "./global/fonts.scss";
+@import "./global/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/hero-block.scss";
+@import "./blocks/advantages.scss";
+@import "./global/title.scss";
+@import "./global/text-description.scss";
+@import "./global/visually-hidden.scss";
+@import "./blocks/button.scss";
+@import "./blocks/find-hotel.scss";
+@import "./blocks/map.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/review.scss";
+@import "./blocks/review-form.scss";
+@import "./blocks/modal.scss";
+@import "./blocks/catalog.scss";

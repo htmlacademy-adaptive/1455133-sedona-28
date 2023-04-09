@@ -1,0 +1,17 @@
+.hero-block {
+  background-image: url("../img/divider.svg"), url("../img/hero-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center bottom, center;
+  background-size: contain, cover;
+  background-color: #68a2ca;
+  padding: 90px 0 85px 0;
+
+  &--form-page {
+    margin-bottom: 36px;
+  }
+}
+
+.hero-block__image {
+  display: block;
+  margin: 0 auto;
+}

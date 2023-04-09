@@ -1,0 +1,13 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__title {
+  margin-bottom: 36px;
+}
+
+.modal__text {
+  margin-bottom: 21px;
+}
