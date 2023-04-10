@@ -1,7 +1,7 @@
 .review__introduction {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $color-disabled-1;
 }
 
 .review__introduction-title {

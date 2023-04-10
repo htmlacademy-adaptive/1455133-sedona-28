@@ -4,7 +4,7 @@
 
 .catalog__introduction {
   padding: 37px 20px 25px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $color-disabled-1;
 }
 
 .introduction__title {
@@ -19,7 +19,7 @@
 
 .catalog__item {
   padding: 24px 20px 25px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid $color-disabled-1;
 }
 
 .photo-cards__image {

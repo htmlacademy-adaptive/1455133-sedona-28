@@ -6,10 +6,11 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  color: $black-color-2;
   margin: 0;
 
   &--have-image {
-    color: #ffffff;
+    color: $white-color-1;
   }
 
   &--card-description {
