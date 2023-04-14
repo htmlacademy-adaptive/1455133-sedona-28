@@ -10,6 +10,8 @@
 }
 
 .social-list__item {
+  display: flex;
+  align-items: center;
   min-width: 48px;
   min-height: 48px;
   background-color: $blue-color;

@@ -3,5 +3,12 @@
 }
 
 .find-hotel__button {
+  display: block;
+  width: 284px;
+  margin: 0 auto;
   margin-bottom: 49px;
+
+  @media (min-width: $tablet-width){
+    width: 458px;
+  }
 }

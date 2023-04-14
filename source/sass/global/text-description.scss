@@ -20,5 +20,9 @@
 
   &--sublist {
     text-align: left;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
   }
 }

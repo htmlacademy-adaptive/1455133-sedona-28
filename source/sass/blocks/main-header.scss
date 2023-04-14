@@ -1,6 +1,7 @@
 .main-header {
   width: 100%;
   background: $white-color-1;
+  position: relative;
 }
 
 .main-header__logo {
@@ -8,4 +9,10 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  height: 96px;
+  width: 185px;
+
+  @media (min-width: $tablet-width) {
+    z-index: 4;
+  }
 }
