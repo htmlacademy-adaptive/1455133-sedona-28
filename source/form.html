@@ -3,46 +3,45 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона.">
-    </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона." width="185px" height="96px">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item main-nav__list-item--active main-nav__list-item--main-page">
+          <a class="main-nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--photo">
+          <a class="main-nav__link" href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--form">
+          <a class="main-nav__link">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--academy">
+          <a class="main-nav__link" href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="catalog.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="main-nav__list-item">
-            <a>
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
     </nav>
   </header>
-  <main class="main-container">
+  <main class="main-container main-container--form-page">
     <section class="hero-block hero-block--form-page">
       <h1 class="visually-hidden">Городок Седона - лучший выбор для туриста</h1>
       <img class="hero-block__image" alt="Седона" src="img/sedona-catalog-page.svg">
@@ -56,7 +55,7 @@
       </div>
       <div class="review__form-wrapper form-wrapper">
         <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="review__form-user-name review__form--review-kit">
+          <fieldset class="review__form-user-name review-kit">
             <legend class="review__form-title title">Представьтесь:</legend>
             <ul class="review__list">
               <li class="review__form-list-item">
@@ -76,76 +75,84 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form-contacts review__form--review-kit">
+          <fieldset class="review__form-contacts review-kit">
             <legend class="review__form-title title">Контактная информация:</legend>
             <ul class="review__list">
-              <li class="review__form-list-item">
+              <li class="review__form-list-item review__form-list-item--contact">
                 <label class="review__form-label text-description" for="phone">Контактный телефон*:</label>
                 <input class="review__form-data" type="number" name="phone" id="phone" placeholder="Введите телефон">
               </li>
-              <li class="review__form-list-item">
+              <li class="review__form-list-item review__form-list-item--contact">
                 <label class="review__form-label text-description" for="email">Электронная почта*:</label>
                 <input class="review__form-data" type="email" name="email" id="email" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form-impression review__form--review-kit">
+          <fieldset class="review__form-impression review-kit">
             <legend class="review__form-title title">Ваше общее впечатление:</legend>
-            <ul class="review__list">
-              <li class="review__form-list-item">
-                <input class="review__form-data" type="radio" name="plus" checked>
-                <label class="review__form-label review__form-data">Скорее положительное</label>
+            <ul class="review__list review__list--choice">
+              <li class="review__form-list-item review__form-list-item--choice">
+                <input class="review__form-data review__form-data--choice" type="radio" name="plus" checked>
+                <label class="review__form-label title title--label">Скорее положительное</label>
               </li>
-              <li class="review__form-list-item">
-                <input class="review__form-data" type="radio" name="minus">
-                <label class="review__form-label review__form-data">Скорее отрицательное</label>
+              <li class="review__form-list-item review__form-list-item--choice">
+                <input class="review__form-data review__form-data--choice" type="radio" name="minus">
+                <label class="review__form-label title title--label">Скорее отрицательное</label>
               </li>
-              <li class="review__form-list-item">
-                <input class="review__form-data" type="radio" name="difficult">
-                <label class="review__form-label review__form-data">Затрудняюсь ответить</label>
+              <li class="review__form-list-item review__form-list-item--choice">
+                <input class="review__form-data title review__form-data--choice" type="radio" name="difficult">
+                <label class="review__form-label title title--label">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form-sight review__form--review-kit">
+          <fieldset class="review__form-sight review-kit">
             <legend class="review__form-title title">Посещенные достопримечательности:</legend>
-            <ul class="review__list">
-              <li class="review__form-list-item">
-                <input class="review__form-data" type="checkbox" name="devils bridge" id="devils-bridge" checked>
-                <label class="review__form-label review__form-data" for="devils-bridge">Мост дьявола</label>
+            <ul class="review__list review__list--choice">
+              <li class="review__form-list-item review__form-list-item--choice">
+                <input class="review__form-data review__form-data--choice" type="checkbox" name="devils bridge"
+                  id="devils-bridge" checked>
+                <label class="review__form-label title title--label" for="devils-bridge">Мост дьявола</label>
               </li>
-              <li class="review__form-list-item">
-                <input class="review__form-data" type="checkbox" name="mountain bell" id="mountain-bell" checked>
-                <label class="review__form-label review__form-data" for="mountain-bell">Гора-колокол</label>
+              <li class="review__form-list-item review__form-list-item--choice">
+                <input class="review__form-data review__form-data--choice" type="checkbox" name="mountain bell"
+                  id="mountain-bell" checked>
+                <label class="review__form-label title title--label" for="mountain-bell">Гора-колокол</label>
               </li>
-              <li class="review__form-list-item">
-                <input class="review__form-data" type="checkbox" name="slide park" id="slide-park" checked>
-                <label class="review__form-label review__form-data" for="slide-park">Слайд-парк</label>
+              <li class="review__form-list-item review__form-list-item--choice">
+                <input class="review__form-data review__form-data--choice" type="checkbox" name="slide park"
+                  id="slide-park" checked>
+                <label class="review__form-label title title--label" for="slide-park">Слайд-парк</label>
               </li>
-              <li class="review__form-list-item">
-                <input class="review__form-data" type="checkbox" name="red rocks" id="red-rocks">
-                <label class="review__form-label review__form-data" for="red-rocks">Красные скалы</label>
+              <li class="review__form-list-item review__form-list-item--choice">
+                <input class="review__form-data review__form-data--choice" type="checkbox" name="red rocks"
+                  id="red-rocks">
+                <label class="review__form-label title title--label" for="red-rocks">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="review__form-emotion review__form--review-kit">
+          <fieldset class="review__form-emotion review-kit">
             <legend class="review__form-title title">Опишите свои эмоции:</legend>
-            <input class="review__form-data" type="text" name="emotion"
-              placeholder="Опишите подробно все свои восторги">
+            <textarea class="review__form-data review__form-data--emotion" name="emotion"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+            <!-- <input class="review__form-data review__form-data--emotion" type="text" name="emotion"
+              placeholder="Опишите подробно все свои восторги"> -->
           </fieldset>
-          <button class="button review__form-button" type="submit">Отправить отзыв</button>
-          <span class="review__form-help">* — обязательные поля</span>
+          <div class="review__button-wrapper">
+            <button class="button review__form-button" type="submit">Отправить отзыв</button>
+            <span class="review__form-help">* — обязательные поля</span>
+          </div>
         </form>
       </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <span class="main-footer__wrapper title">#visitsedona</span>
+      <span class="main-footer__hashtag title">#visitsedona</span>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social__link social__link-vk" href="https://vk.com/htmlacademy">
+          <a class="social-list__link social-list__link-vk" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
-            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none"
+            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none"
               viewBox="0 0 24 14">
               <path fill="#fff" fill-rule="evenodd"
                 d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
@@ -154,9 +161,9 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social__link social__link-telegram" href="https://vk.com/htmlacademy">
+          <a class="social-list__link social-list__link-telegram" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
-            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none"
+            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none"
               viewBox="0 0 22 18">
               <path fill="#fff"
                 d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
@@ -164,9 +171,9 @@
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social__link social__link-youtube" href="https://vk.com/htmlacademy">
+          <a class="social-list__link social-list__link-youtube" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Ютьюб</span>
-            <svg class="social__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
+            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
               viewBox="0 0 20 14">
               <path fill="#fff"
                 d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
@@ -186,7 +193,7 @@
     </div>
   </footer>
   <div class="modal-container">
-    <div class="modal modal-error">
+    <div class="modal modal--error">
       <p class="modal__title title">Что-то пошло не так!</p>
       <p class="modal__text text-description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
@@ -194,8 +201,8 @@
     </div>
   </div>
   <div class="modal-container">
-    <div class="modal">
-      <p class="modal__title">Ваш отзыв отправлен!</p>
+    <div class="modal modal--success">
+      <p class="modal__title title">Ваш отзыв отправлен!</p>
       <p class="modal__text text-description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
         мы
         опубликуем его на сайте.</p>

@@ -6,14 +6,27 @@
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
+  color: $black-color-2;
   margin: 0;
 
   &--have-image {
-    color: #ffffff;
+    color: $white-color-1;
   }
 
   &--card-description {
     text-transform: none;
     text-align: left;
+
+    @media (min-width: $desktop-width) {
+      color: $white-color-1;
+    }
+  }
+
+  &--sublist {
+    text-align: left;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+    }
   }
 }

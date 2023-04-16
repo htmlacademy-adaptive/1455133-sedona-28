@@ -6,10 +6,11 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  color: $black-color-1;
   margin: 0;
 
   &--have-image {
-    color: #ffffff;
+    color: $white-color-1;
   }
 
   &--non-list {
@@ -17,16 +18,29 @@
   }
 
   &--list {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
   }
 
   &--sublist {
     margin-bottom: 16px;
+    text-align: left;
   }
 
   &--card-title {
     font-size: 14px;
     line-height: 21px;
     text-align: left;
+
+    @media (min-width: $desktop-width) {
+      color: $white-color-1;
+    }
+  }
+
+  &--white {
+    color: $white-color-1;
+  }
+
+  &--label {
+    text-transform: none;
   }
 }

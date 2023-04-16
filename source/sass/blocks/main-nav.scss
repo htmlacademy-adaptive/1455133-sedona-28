@@ -1,26 +1,91 @@
 .main-nav {
   display: flex;
   position: relative;
+  min-width: 320px;
   min-height: 56px;
 }
 
 .main-nav__toggle {
   position: absolute;
-  right: 0;
   top: 17px;
   right: 20px;
   width: 23px;
   height: 22px;
-  background-image: url("../../img/burger-icon.svg");
+  background-image: url("../img/burger-icon.svg");
   border: none;
-  background-color: #ffffff;
+  background-color: $white-color-1;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
-  position: absolute;
-  left: 25%;
-  z-index: 3;
-  margin: 0;
+  min-width: 320px;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
   display: none;
+  flex-direction: column;
+  z-index: 3;
+  gap: 1px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  background-color: $blue-color;
+  color: $white-color-1;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: main photo form logo academy;
+    background-color: $white-color-1;
+    color: $black-color-1;
+  }
+}
+
+.main-nav__list-item--main-page {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.main-nav__list-item--main-photo {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.main-nav__list-item--form {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.main-nav__list-item--academy {
+  grid-column-start: 5;
+  grid-column-end: 6;
+}
+
+.main-nav__list-item {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 17px 0 12px 0;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
+}
+
+.main-nav__list-item:last-child {
+  box-shadow: none;
+}
+
+.main-nav__link {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
 }

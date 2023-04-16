@@ -10,13 +10,15 @@
 }
 
 .social-list__item {
+  display: flex;
+  align-items: center;
   min-width: 48px;
   min-height: 48px;
-  background-color: #81b3d2;
+  background-color: $blue-color;
   text-align: center;
 }
 
-.social__link {
+.social-list__link {
   display: block;
   box-sizing: border-box;
   width: 100%;
