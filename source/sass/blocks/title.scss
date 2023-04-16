@@ -30,9 +30,17 @@
     font-size: 14px;
     line-height: 21px;
     text-align: left;
+
+    @media (min-width: $desktop-width) {
+      color: $white-color-1;
+    }
   }
 
   &--white {
     color: $white-color-1;
+  }
+
+  &--label {
+    text-transform: none;
   }
 }

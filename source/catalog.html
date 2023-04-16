@@ -10,37 +10,35 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона.">
-    </a>
-    <nav class="main-nav">
+    <nav class="main-header__nav main-nav">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона." width="185px" height="96px">
+      </a>
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item main-nav__list-item--active main-nav__list-item--main-page">
+          <a class="main-nav__link" href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--photo">
+          <a class="main-nav__link">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--form">
+          <a class="main-nav__link" href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__list-item main-nav__list-item--academy">
+          <a class="main-nav__link" href="#">
+            HTML Academy
+          </a>
+        </li>
+      </ul>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="main-nav__list-item">
-            <a>
-              Фото и видео
-            </a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__list-item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
     </nav>
   </header>
   <main class="main-container">
@@ -55,42 +53,52 @@
           помогут
           вам забыть о политике и экономике.</p>
       </div>
-      <div class="catalog__cards photo-cards">
-        <ul class="catalog__list">
-          <li class="catalog__item">
-            <img class="photo-cards__image" alt="Неродные просторы." src="img/catalog-image/non-native-spaces.jpg">
-            <div class="photo-cards__wrapper card-description">
+      <ul class="catalog__list">
+        <li class="catalog__item catalog__item--main photo-card">
+          <img class="photo-card__image photo-card__image--main" alt="Неродные просторы."
+            src="img/catalog-image/non-native-spaces.jpg">
+          <div class="photo-card__wrapper">
+            <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Неродные просторы</h3>
               <span class="text-description text-description--card-description">Автор фото: Борис</span>
-              <span class="card-description__like-quantity">1350</span>
             </div>
-          </li>
-          <li class="catalog__item">
-            <img class="photo-cards__image" alt="Местная растительность." src="img/catalog-image/native-vegetation.jpg">
-            <div class="photo-cards__wrapper card-description">
+            <span class="photo-card__like-quantity title title--card-title">1350</span>
+          </div>
+        </li>
+        <li class="catalog__item photo-card">
+          <img class="photo-card__image photo-card__image--other" alt="Местная растительность."
+            src="img/catalog-image/native-vegetation.jpg">
+          <div class="photo-card__wrapper">
+            <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Местная растительность</h3>
               <span class="text-description text-description--card-description">Автор фото: Сергей</span>
-              <span class="card-description__like-quantity">143</span>
             </div>
-          </li>
-          <li class="catalog__item">
-            <img class="photo-cards__image" alt="Дорога на Север." src="img/catalog-image/road-to-north.jpg">
-            <div class="photo-cards__wrapper card-description">
+            <span class="photo-card__like-quantity title title--card-title">143</span>
+          </div>
+        </li>
+        <li class="catalog__item photo-card">
+          <img class="photo-card__image photo-card__image--other" alt="Дорога на Север."
+            src="img/catalog-image/road-to-north.jpg">
+          <div class="photo-card__wrapper">
+            <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Дорога на Север</h3>
               <span class="text-description text-description--card-description">Автор фото: Петр</span>
-              <span class="card-description__like-quantity">96</span>
             </div>
-          </li>
-          <li class="catalog__item">
-            <img class="photo-cards__image" alt="Мост дьявола." src="img/catalog-image/devils-bridge-catalog.jpg">
-            <div class="photo-cards__wrapper card-description">
+            <span class="photo-card__like-quantity title title--card-title">96</span>
+          </div>
+        </li>
+        <li class="catalog__item photo-card">
+          <img class="photo-card__image photo-card__image--other" alt="Мост дьявола."
+            src="img/catalog-image/devils-bridge-catalog.jpg">
+          <div class="photo-card__wrapper">
+            <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Мост дьявола</h3>
               <span class="text-description text-description--card-description">Автор фото: Антон</span>
-              <span class="card-description__like-quantity">254</span>
             </div>
-          </li>
-        </ul>
-      </div>
+            <span class="photo-card__like-quantity title title--card-title">254</span>
+          </div>
+        </li>
+      </ul>
     </section>
     <section class="video">
       <h2 class="video__title title">Все еще сомневаетесь?</h2>
@@ -103,7 +111,7 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <span class="main-footer__wrapper title">#visitsedona</span>
+      <span class="main-footer__hashtag title">#visitsedona</span>
       <ul class="social-list">
         <li class="social-list__item">
           <a class="social-list__link social-list__link-vk" href="https://vk.com/htmlacademy">
