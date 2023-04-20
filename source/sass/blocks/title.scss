@@ -18,12 +18,20 @@
   }
 
   &--list {
-    margin-bottom: 52px;
+    margin-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      width: 130px;
+    }
   }
 
   &--sublist {
     margin-bottom: 16px;
     text-align: left;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 28px;
+    }
   }
 
   &--card-title {
@@ -42,5 +50,10 @@
 
   &--label {
     text-transform: none;
+  }
+
+  &--find-hotel {
+    font-size: 21px;
+    margin-bottom: 31px;
   }
 }

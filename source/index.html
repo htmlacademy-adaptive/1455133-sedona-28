@@ -10,10 +10,10 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-header__nav main-nav">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона." width="185px" height="96px">
-      </a>
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона." width="185px" height="96px">
+    </a>
+    <nav class="main-header__nav main-nav main-nav--closed">
       <ul class="main-nav__list">
         <li class="main-nav__list-item main-nav__list-item--active main-nav__list-item--main-page">
           <a class="main-nav__link">
@@ -44,7 +44,7 @@
   <main class="main-container">
     <section class="hero-block">
       <h1 class="visually-hidden">Городок Седона - лучший выбор для туриста</h1>
-      <img class="hero-block__image" alt="Седона" src="img/hero-sedona.svg">
+      <img class="hero-block__image" alt="Седона" src="img/hero-sedona-test.svg">
     </section>
     <section class="advantages">
       <div class="advantages__content-wrapper advantages__content-wrapper--annotation">
@@ -59,6 +59,8 @@
           <div
             class="advantages__content-wrapper advantages__content-wrapper--with-image advantages__content-wrapper--first">
             <h3 class="advantages__title title title--have-image title--list">Настоящий городок</h3>
+            <span
+              class="advantages__number advantages__number--with-image text-description text-description--have-image">№1</span>
             <p class="advantages__text text-description text-description--have-image">Седона не аттракцион для туристов,
               там течет своя жизнь</p>
           </div>
@@ -72,13 +74,13 @@
             </li>
             <li class="advantages__subitem-item advantages__subitem-item--food">
               <h3 class="title title--sublist">Еда</h3>
-              <p class="text-description text-description--sublist">Рекомендуем пожить в настоящем мотеле, все как в
-                кино!</p>
+              <p class="text-description text-description--sublist">Всегда заказывайте фирменный бургер, вы не
+                разочаруетесь!</p>
             </li>
             <li class="advantages__subitem-item advantages__subitem-item--souvenirs">
               <h3 class="advantages__title title title--sublist">Сувениры</h3>
-              <p class="text-description text-description--sublist">Рекомендуем пожить в настоящем мотеле, все как в
-                кино!</p>
+              <p class="text-description text-description--sublist">Не только китайского, но и местного производства!
+              </p>
             </li>
           </ul>
         </li>
@@ -86,6 +88,7 @@
           <div
             class="advantages__content-wrapper advantages__content-wrapper--with-image advantages__content-wrapper--devils-bridge">
             <h3 class="advantages__title title title--have-image title--list">Там есть мост дьявола</h3>
+            <span class="advantages__number advantages__number--with-image text-description--have-image">№2</span>
             <p class="advantages__text text-description text-description--have-image">Да, по нему можно пройти! Если вы
               осмелитесь, конечно</p>
           </div>
@@ -95,18 +98,21 @@
         <li class="advantages__item advantages__item--without-image advantages__item--square">
           <div class="advantages__content-wrapper advantages__content-wrapper--without-image">
             <h3 class="advantages__title title title--list">Небольшая площадь</h3>
+            <span class="advantages__number advantages__number--without-image text-description">№3</span>
             <p class="advantages__text text-description">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="advantages__item advantages__item--without-image advantages__item--road">
           <div class="advantages__content-wrapper advantages__content-wrapper--without-image">
             <h3 class="advantages__title title title--list">Красивая дорога</h3>
+            <span class="advantages__number advantages__number--without-image text-description">№4</span>
             <p class="advantages__text text-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
         </li>
         <li class="advantages__item advantages__item--without-image advantages__item--tourist">
           <div class="advantages__content-wrapper advantages__content-wrapper--without-image">
             <h3 class="advantages__title title title--list">Мало туристов</h3>
+            <span class="advantages__number advantages__number--without-image text-description">№5</span>
             <p class="advantages__text text-description">Большинство едет в Гранд Каньон и толпится там</p>
           </div>
         </li>
@@ -114,8 +120,8 @@
     </section>
     <section class="find-hotel">
       <div class="find-hotel__text-wrapper">
-        <h2 class="find-hotel__title title title--non-list">Заинтересовались?</h2>
-        <p class="find-hotel__description text-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+        <h2 class="find-hotel__title title title--find-hotel">Заинтересовались?</h2>
+        <p class="find-hotel__description text-description text-description--find-hotel">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения
           гостиниц в Седоне</p>
       </div>
@@ -173,6 +179,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
