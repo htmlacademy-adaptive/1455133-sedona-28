@@ -38,6 +38,7 @@
     font-size: 14px;
     line-height: 21px;
     text-align: left;
+    margin-bottom: 2px;
 
     @media (min-width: $desktop-width) {
       color: $white-color-1;
@@ -55,5 +56,20 @@
   &--find-hotel {
     font-size: 21px;
     margin-bottom: 31px;
+  }
+
+  &--catalog-introduction {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &--video {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
   }
 }

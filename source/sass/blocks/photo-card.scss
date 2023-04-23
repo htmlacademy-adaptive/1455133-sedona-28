@@ -1,0 +1,125 @@
+.photo-card {
+  padding: 0 20px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $color-disabled-1;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 4;
+    }
+  }
+}
+
+.photo-card__image {
+  width: 100%;
+  height: 280px;
+  // padding: 24px 0 15px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / 3;
+    margin: 0;
+    padding: 0;
+  }
+
+  &--main {
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 100%;
+      height: 400px;
+    }
+  }
+
+  &--other {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      height: 267px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-card__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 80px;
+    // box-sizing: border-box;
+    grid-column: 1 / 3;
+    padding: 21px 20px 0;
+    background-color: $white-color-2;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    margin-top: -77px;
+    padding: 12px 25px 0;
+    color: $white-color-1;
+
+    &--main {
+      padding: 19px 20px 0;
+    }
+  }
+}
+
+.photo-card__text-wrapper {
+  margin-bottom: 15px;
+}
+
+.photo-card__like-quantity {
+  position: relative;
+  display: block;
+  margin-left: 37px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: -37px;
+    width: 23px;
+    height: 21px;
+    background-image: url("../img/catalog-like-icon.svg");
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -10px;
+    margin-left: -36px;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   margin-top: -15px;
+
+  //   &::before {
+  //     top: -4px;
+  //     left: -33px;
+  //   }
+  // }
+}
