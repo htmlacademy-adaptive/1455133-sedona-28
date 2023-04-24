@@ -249,6 +249,10 @@
     width: 8px;
     background-color: $white-color-1;
   }
+
+  &--with-image {
+    color: $white-color-1;
+  }
 }
 
 .advantages__number--without-image::before,
