@@ -468,6 +468,9 @@
   width: 8px;
   background-color: #ffffff;
 }
+.advantages__number--with-image {
+  color: #ffffff;
+}
 
 .advantages__number--without-image::before,
 .advantages__number--without-image::after {
@@ -848,7 +851,7 @@
 @media (min-width: 1200px) {
   .review__list--impressions {
     padding: 0 52px;
-    column-gap: 54px;
+    column-gap: 39px;
     margin-bottom: 60px;
   }
 }
