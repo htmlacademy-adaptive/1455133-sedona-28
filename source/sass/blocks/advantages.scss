@@ -8,8 +8,9 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 32px 20px;
+  padding: 32px 27px 16px;
   box-sizing: border-box;
+  margin-bottom: 21px;
 
 
   &--with-image {
@@ -19,6 +20,23 @@
   &--without-image {
     background-color: $grey-color-1;
     padding: 24px 26px;
+    margin: 0;
+  }
+
+  &--first {
+    padding: 49px 27px 39px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 37px;
+      top: -22px;
+      background-image: url("../img/divider-mini.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      // background-position: top center;
+    }
   }
 
   // &--anotation {
@@ -31,7 +49,11 @@
   //   height: 37px;
   //   padding: 0;
   //   content: "";
+  //   bottom: -212px;
+  //   z-index: 5;
   //   background-image: url("../img/divider-mini.svg");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
 
   // }
 
@@ -188,7 +210,8 @@
   display: block;
   width: 100%;
   min-height: 256px;
-  grid-column: 2/3;
+  // grid-column: 2/3;
+  // margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
