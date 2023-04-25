@@ -2,14 +2,38 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   border-bottom: 1px solid $color-disabled-1;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .review__introduction-title {
   padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 21px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 33px;
+  }
 }
 
 .review__introduction-description {
-  padding-bottom: 28px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 435px;
+    margin-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 43px;
+  }
 }

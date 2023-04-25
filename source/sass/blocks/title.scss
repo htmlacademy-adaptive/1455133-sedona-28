@@ -14,22 +14,31 @@
   }
 
   &--non-list {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   &--list {
-    margin-bottom: 52px;
+    margin-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      width: 130px;
+    }
   }
 
   &--sublist {
     margin-bottom: 16px;
     text-align: left;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 28px;
+    }
   }
 
   &--card-title {
     font-size: 14px;
     line-height: 21px;
     text-align: left;
+    margin-bottom: 2px;
 
     @media (min-width: $desktop-width) {
       color: $white-color-1;
@@ -42,5 +51,25 @@
 
   &--label {
     text-transform: none;
+  }
+
+  &--find-hotel {
+    font-size: 21px;
+    margin-bottom: 31px;
+  }
+
+  &--catalog-introduction {
+    margin-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      margin-bottom: 32px;
+    }
+  }
+
+  &--video {
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
   }
 }
