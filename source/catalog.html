@@ -44,7 +44,8 @@
   <main class="main-container main-container--catalog-page">
     <section class="hero-block hero-block--catalog-page">
       <h1 class="visually-hidden">Городок Седона - лучший выбор для туриста</h1>
-      <img class="hero-block__image hero-block__image--catalog-page" alt="Седона" src="img/sedona-catalog-page.svg">
+      <img class="hero-block__image hero-block__image--catalog-page" alt="Седона" src="img/sedona-catalog-page.svg"
+        width="229" height="39">
     </section>
     <section class="catalog">
       <div class="introduction">
@@ -57,47 +58,109 @@
       </div>
       <ul class="catalog__list">
         <li class="catalog__item catalog__item--main photo-card photo-card--main">
-          <img class="photo-card__image photo-card__image--main" alt="Неродные просторы."
-            src="img/catalog-image/non-native-spaces.jpg">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-image/non-native-spaces-desktop.jpg 1x, img/catalog-image/non-native-spaces-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-image/non-native-spaces-tablet.jpg 1x, img/catalog-image/non-native-spaces-tablet@2x.jpg 2x">
+            <img class="photo-card__image photo-card__image--main" alt="Неродные просторы."
+              src="img/catalog-image/non-native-spaces.jpg" srcset="img/catalog-image/non-native-spaces@2x.jpg 2x"
+              width="280" height="280">
+          </picture>
           <div class="photo-card__wrapper photo-card__wrapper--main">
             <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Неродные просторы</h3>
               <span class="text-description text-description--card-description">Автор фото: Борис</span>
             </div>
-            <span class="photo-card__like-quantity title title--card-title">1350</span>
+            <div class="photo-card__like-quantity-wrapper">
+              <svg class="photo-card__like-quantity-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+              </svg>
+              <span class="photo-card__like-quantity title title--card-title">1350</span>
+            </div>
           </div>
         </li>
         <li class="catalog__item photo-card">
-          <img class="photo-card__image photo-card__image--other" alt="Местная растительность."
-            src="img/catalog-image/native-vegetation.jpg">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-image/native-vegetation-desktop.jpg 1x, img/catalog-image/native-vegetation-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-image/native-vegetation-tablet.jpg 1x, img/catalog-image/native-vegetation-tablet@2x.jpg 2x">
+            <img class="photo-card__image photo-card__image--other" alt="Местная растительность."
+              src="img/catalog-image/native-vegetation.jpg" srcset="img/catalog-image/native-vegetation@2x.jpg 2x"
+              width="280" height="280">
+          </picture>
+          <!-- <img class="photo-card__image photo-card__image--other" alt="Местная растительность."
+            src="img/catalog-image/native-vegetation.jpg"> -->
           <div class="photo-card__wrapper">
             <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Местная растительность</h3>
               <span class="text-description text-description--card-description">Автор фото: Сергей</span>
             </div>
-            <span class="photo-card__like-quantity title title--card-title">143</span>
+            <div class="photo-card__like-quantity-wrapper">
+              <svg class="photo-card__like-quantity-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+              </svg>
+              <span class="photo-card__like-quantity title title--card-title">143</span>
+            </div>
           </div>
         </li>
         <li class="catalog__item photo-card">
-          <img class="photo-card__image photo-card__image--other" alt="Дорога на Север."
-            src="img/catalog-image/road-to-north.jpg">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-image/road-to-north-desktop.jpg 1x, img/catalog-image/road-to-north-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-image/road-to-north-tablet.jpg 1x, img/catalog-image/road-to-north-tablet@2x.jpg 2x">
+            <img class="photo-card__image photo-card__image--other" alt="Неродные просторы."
+              src="img/catalog-image/road-to-north.jpg" srcset="img/catalog-image/road-to-north@2x.jpg 2x" width="280"
+              height="280">
+          </picture>
+          <!-- <img class="photo-card__image photo-card__image--other" alt="Дорога на Север."
+            src="img/catalog-image/road-to-north.jpg"> -->
           <div class="photo-card__wrapper">
             <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Дорога на Север</h3>
               <span class="text-description text-description--card-description">Автор фото: Петр</span>
             </div>
-            <span class="photo-card__like-quantity title title--card-title">96</span>
+            <div class="photo-card__like-quantity-wrapper">
+              <svg class="photo-card__like-quantity-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+              </svg>
+              <span class="photo-card__like-quantity title title--card-title">96</span>
+            </div>
           </div>
         </li>
         <li class="catalog__item photo-card">
-          <img class="photo-card__image photo-card__image--other" alt="Мост дьявола."
-            src="img/catalog-image/devils-bridge-catalog.jpg">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/catalog-image/devils-bridge-catalog-desktop.jpg 1x, img/catalog-image/devils-bridge-catalog-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/catalog-image/devils-bridge-catalog-tablet.jpg 1x, img/catalog-image/devils-bridge-catalog-tablet@2x.jpg 2x">
+            <img class="photo-card__image photo-card__image--other" alt="Неродные просторы."
+              src="img/catalog-image/devils-bridge-catalog.jpg"
+              srcset="img/catalog-image/devils-bridge-catalog@2x.jpg 2x" width="280" height="280">
+          </picture>
+          <!-- <img class="photo-card__image photo-card__image--other" alt="Мост дьявола."
+            src="img/catalog-image/devils-bridge-catalog.jpg"> -->
           <div class="photo-card__wrapper">
             <div class="photo-card__text-wrapper card-description">
               <h3 class="title title--card-title">Мост дьявола</h3>
               <span class="text-description text-description--card-description">Автор фото: Антон</span>
             </div>
-            <span class="photo-card__like-quantity title title--card-title">254</span>
+            <div class="photo-card__like-quantity-wrapper">
+              <svg class="photo-card__like-quantity-icon" width="23" height="21" viewBox="0 0 23 21" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+              </svg>
+              <span class="photo-card__like-quantity title title--card-title">254</span>
+            </div>
           </div>
         </li>
       </ul>
@@ -107,7 +170,16 @@
       <p class="text-description video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
       <div class="video__wrapper">
-        <img src="img/video-preview.jpg" alt="Местные красоты" class="video__preview">
+        <a class="video__link" href="#">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/video-preview-desktop.jpg 1x, img/video-preview-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/video-preview-tablet.jpg 1x, img/video-preview-tablet@2x.jpg 2x">
+            <img class="video__preview" src="img/video-preview.jpg" srcset="img/video-preview@2x.jpg"
+              alt="Местные красоты" width="280" height="177">
+          </picture>
+        </a>
       </div>
     </section>
   </main>
