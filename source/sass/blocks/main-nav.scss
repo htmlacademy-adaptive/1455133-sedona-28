@@ -29,8 +29,8 @@
   left: 0;
   width: 23px;
   height: 4px;
-  background-color: $blue-color;
-  box-shadow: 0 9px 0 0 $blue-color, 0 18px 0 0 $blue-color;
+  background-color: $blue-color-1;
+  box-shadow: 0 9px 0 0 $blue-color-1, 0 18px 0 0 $blue-color-1;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -40,17 +40,17 @@
 
 
   // .main-nav--closed .main-nav__toggle:hover::before {
-  //   background-color: fade($blue-color, 60%);
+  //   background-color: fade($blue-color-1-1, 60%);
   //   box-shadow:
-  //     0 9px 0 0 fade($blue-color, 60%),
-  //     0 18px 0 0 fade($blue-color, 60%);
+  //     0 9px 0 0 fade($blue-color-1, 60%),
+  //     0 18px 0 0 fade($blue-color-1, 60%);
   // }
 
   // .main-nav--closed .main-nav__toggle:active::before {
-  //   background-color: fade($blue-color, 30%);
+  //   background-color: fade($blue-color-1, 30%);
   //   box-shadow:
-  //     0 9px 0 0 fade($blue-color, 30%),
-  //     0 18px 0 0 fade($blue-color, 30%);
+  //     0 9px 0 0 fade($blue-color-1, 30%),
+  //     0 18px 0 0 fade($blue-color-1, 30%);
   // }
 
   .main-nav--opened .main-nav__toggle {
@@ -111,7 +111,7 @@
   padding: 0;
   list-style-type: none;
   color: $white-color-1;
-  // background-color: $blue-color;
+  // background-color: $blue-color-1;
 
   @media (min-width: $tablet-width) {
     position: inherit;
@@ -146,7 +146,7 @@
 .main-nav__list-item {
   text-align: center;
   box-sizing: border-box;
-  background-color: $blue-color;
+  background-color: $blue-color-1;
   // box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 
   @media (min-width: $tablet-width) {
@@ -165,7 +165,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  // background-color: $blue-color;
+  // background-color: $blue-color-1;
   border-top: 1px solid rgba(1, 1, 1, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 

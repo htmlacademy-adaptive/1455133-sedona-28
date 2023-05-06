@@ -5,9 +5,15 @@
   line-height: 21px;
 }
 
-.page__body {
+.page__container {
   min-height: 100%;
   min-width: 320px;
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   background-color: $white-color-1;
+}
+
+.page__body {
+  margin: 0;
+  background-color: $white-color-2;
 }

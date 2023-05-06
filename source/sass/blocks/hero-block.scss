@@ -3,16 +3,15 @@
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom, center;
   background-size: cover, cover;
-  background-color: $blue-color;
+  background-color: $blue-color-1;
   padding: 90px 0 85px 0;
-  object-fit: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/divider-test.svg"), url("../img/hero-background@2x.jpg");
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 77px;
+    padding: 77px 0 89px 0;
     background-image: url("../img/divider-test.svg"), url("../img/hero-background-tablet.jpg");
     background-size: auto, cover;
 
@@ -31,36 +30,67 @@
   }
 
   &--form-page {
-    margin-bottom: 64px;
+    background-image: url("../img/divider-test.svg"), url("../img/hero-background-another.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/divider-test.svg"), url("../img/hero-background-another@2x.jpg");
+    }
+    // margin-bottom: 64px;
     padding: 52px 46px 67px;
 
     @media (min-width: $tablet-width) {
       padding-top: 95px;
       padding-bottom: 79px;
       margin-bottom: 27px;
+      background-size: auto, cover;
+      background-image: url("../img/divider-test.svg"), url("../img/hero-background-tablet-another.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/divider-test.svg"), url("../img/hero-background-tablet-another@2x.jpg");
+      }
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 100px;
-      padding-bottom: 121px;
-      margin-bottom: 115px;
+      padding-bottom: 84px;
+      margin-bottom: 77px;
+      background-image: url("../img/divider-test.svg"), url("../img/hero-background-desktop-another.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/divider-test.svg"), url("../img/hero-background-desktop-another@2x.jpg");
+      }
     }
   }
 
   &--catalog-page {
     margin-bottom: 0;
     padding: 52px 46px 67px;
+    background-image: url("../img/divider-test.svg"), url("../img/hero-background-another.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/divider-test.svg"), url("../img/hero-background-another@2x.jpg");
+    }
 
     @media (min-width: $tablet-width) {
       padding-top: 94px;
       padding-bottom: 118px;
       margin-bottom: 28px;
+      background-image: url("../img/divider-test.svg"), url("../img/hero-background-tablet-another.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/divider-test.svg"), url("../img/hero-background-tablet-another@2x.jpg");
+      }
     }
 
     @media (min-width: $desktop-width) {
       padding-top: 100px;
       padding-bottom: 122px;
       margin-bottom: 60px;
+      background-image: url("../img/divider-test.svg"), url("../img/hero-background-desktop-another.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/divider-test.svg"), url("../img/hero-background-desktop-another@2x.jpg");
+      }
     }
   }
 }
@@ -71,6 +101,11 @@
   object-fit: contain;
   height: 214px;
   width: 282px;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
 
   &--form-page {
     width: auto;

@@ -9,19 +9,35 @@
   color: $black-color-1;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+
   &--have-image {
     color: $white-color-1;
+
+    @media (min-width: $tablet-width) {
+      // font-size: 21px;
+      // line-height: 26px;
+    }
   }
 
   &--non-list {
     margin-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+      margin-bottom: 28px;
+    }
   }
 
   &--list {
     margin-bottom: 11px;
 
     @media (min-width: $tablet-width) {
-      width: 130px;
+      width: 150px;
+      margin-bottom: 12px;
     }
   }
 
@@ -30,7 +46,7 @@
     text-align: left;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 28px;
+      margin-bottom: 22px;
     }
   }
 
@@ -51,11 +67,25 @@
 
   &--label {
     text-transform: none;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
   }
 
   &--find-hotel {
     font-size: 21px;
-    margin-bottom: 31px;
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+      line-height: 26px;
+      margin-bottom: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 35px;
+    }
   }
 
   &--catalog-introduction {
