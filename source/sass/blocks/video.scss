@@ -16,6 +16,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: $white-color-1;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .video__title {
@@ -74,7 +84,11 @@
   position: relative;
 }
 
+//добавил дисплей, макс. ширину и маржин
 .video__link {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
   cursor: pointer;
   position: relative;
 }

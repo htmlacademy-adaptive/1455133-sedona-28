@@ -14,6 +14,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 53px;
   }
+
+  &--form-page {
+    margin-bottom: 0;
+  }
 }
 
 .introduction__description {

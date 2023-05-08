@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
 </head>
 
 <body class="page__body">
@@ -26,8 +28,8 @@
               Фото и видео
             </a>
           </li>
-          <li class="main-nav__list-item main-nav__list-item--active main-nav__list-item--form">
-            <a class="main-nav__link">
+          <li class="main-nav__list-item main-nav__list-item--form">
+            <a class="main-nav__link main-nav__link--current">
               Форма отзыва
             </a>
           </li>
@@ -48,7 +50,7 @@
         <img class="hero-block__image hero-block__image--form-page" alt="Седона" src="img/sedona-catalog-page.svg">
       </section>
       <section class="review">
-        <div class="introduction review__introduction">
+        <div class="introduction introduction--form-page review__introduction">
           <h2 class="title review__introduction-title">Оставьте свой отзыв</h2>
           <p class="text-description review__introduction-description">Помогите нашим отелям стать лучше! оставьте отзыв
             о
@@ -87,14 +89,14 @@
                   <label class="text-description review__form-label review__form-label--user-data"
                     for="phone">Контактный
                     телефон*:</label>
-                  <input class="review__form-data review__form-data--user-data" type="number" name="phone" id="phone"
+                  <input class="review__form-data review__form-data--user-data review__form-data--contacts" type="number" name="phone" id="phone"
                     placeholder="Введите телефон">
                 </li>
                 <li class="review__form-list-item review__form-list-item--contact review__form-list-item--email">
                   <label class="text-description review__form-label review__form-label--user-data"
                     for="email">Электронная
                     почта*:</label>
-                  <input class="review__form-data review__form-data--user-data" type="email" name="email" id="email"
+                  <input class="review__form-data review__form-data--user-data review__form-data--contacts" type="email" name="email" id="email"
                     placeholder="Введите e-mail">
                 </li>
               </ul>
@@ -135,7 +137,7 @@
               </legend>
               <ul class="review__list review__list--choice review__list--sights">
                 <li class="review__form-list-item review__form-list-item--choice review__form-list-item--devils-bridge">
-                  <label class="title title--label review__form-label" for="devils-bridge">
+                  <label class="title title--label review__form-label review__form-label--sights" for="devils-bridge">
                     <input class="review__form-data review__form-data--choice" type="checkbox" name="devils bridge"
                       id="devils-bridge" checked>
                     <span class="review__form-checkbox"></span>
@@ -143,7 +145,7 @@
                   </label>
                 </li>
                 <li class="review__form-list-item review__form-list-item--choice review__form-list-item--mountain-bell">
-                  <label class="title title--label review__form-label" for="mountain-bell">
+                  <label class="title title--label review__form-label review__form-label--sights" for="mountain-bell">
                     <input class="review__form-data review__form-data--choice" type="checkbox" name="mountain bell"
                       id="mountain-bell" checked>
                     <span class="review__form-checkbox"></span>
@@ -151,7 +153,7 @@
                   </label>
                 </li>
                 <li class="review__form-list-item review__form-list-item--choice review__form-list-item--slide-park">
-                  <label class="title title--label review__form-label" for="slide-park">
+                  <label class="title title--label review__form-label review__form-label--sights" for="slide-park">
                     <input class="review__form-data review__form-data--choice" type="checkbox" name="slide park"
                       id="slide-park" checked>
                     <span class="review__form-checkbox"></span>
@@ -159,7 +161,7 @@
                   </label>
                 </li>
                 <li class="review__form-list-item review__form-list-item--choice review__form-list-item--red-rocks">
-                  <label class="title title--label review__form-label" for="red-rocks">
+                  <label class="title title--label review__form-label review__form-label--sights" for="red-rocks">
                     <input class="review__form-data review__form-data--choice" type="checkbox" name="red rocks"
                       id="red-rocks">
                     <span class="review__form-checkbox"></span>
@@ -218,10 +220,10 @@
           </li>
         </ul>
         <div class="copyright main-footer__copyright">
-          <span class="copyright__text text-description">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="text-description copyright__text">Разработано</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-              <path fill="#000"
+              <path fill="currentColor"
                 d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
             </svg>
           </a>

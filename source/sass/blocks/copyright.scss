@@ -7,4 +7,22 @@
 .copyright__text {
   margin-right: 12px;
   text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: $black-color-1;
+
+  &:hover {
+    color: $blue-color-1;
+  }
+
+  &:active {
+    color: $color-disabled-2;
+  }
 }
