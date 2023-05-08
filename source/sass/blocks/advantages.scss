@@ -12,19 +12,79 @@
   box-sizing: border-box;
   margin-bottom: 21px;
 
+  @media (min-width: $tablet-width) {
+    padding: 55px 31px 27px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    &--annotation {
+      padding: 51px 130px 31px;
+      margin-bottom: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--annotation {
+      padding: 61px 291px 27px;
+      margin-bottom: 18px;
+    }
+  }
+
   &--with-image {
-    background-color: $blue-color;
+    background-color: $blue-color-1;
     margin-bottom: 0;
+
+    // @media (min-width: $tablet-width) {
+    //   padding-bottom: 28px;
+    // }
   }
 
   &--without-image {
     background-color: $grey-color-1;
-    padding: 24px 26px;
+    padding: 25px 33px;
     margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 42px 31px 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 50px 27px;
+    }
+  }
+
+  &--road {
+    @media (min-width: $desktop-width) {
+      padding: 52px 65px 27px;
+    }
+  }
+
+  &--devils-bridge {
+    padding-top: 36px;
+    padding-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      order: 2;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      padding: 53px 32px 27px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 53px 85px 27px;
+    }
   }
 
   &--first {
     padding: 49px 27px 39px;
+
+    @media (min-width: $tablet-width) {
+      padding: 55px 27px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 55px 55px 30px;
+    }
 
     &::before {
       position: absolute;
@@ -40,18 +100,6 @@
       @media (min-width: $tablet-width) {
         display: none;
       }
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 53px 33px 31px;
-    margin: 0 auto;
-    box-sizing: border-box;
-
-    &--devils-bridge {
-      order: 2;
-      grid-column-start: 2;
-      grid-column-end: 3;
     }
   }
 }
@@ -108,10 +156,10 @@
 .advantages__subitem {
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 33px;
   list-style-type: none;
   margin: 0;
-  padding: 23px 18px 46px 65px;
+  padding: 32px 18px 46px 65px;
   background: $white-color-1;
 
   @media (min-width: $tablet-width) {
@@ -131,7 +179,7 @@
 
   &::before {
     position: absolute;
-    top: 0;
+    top: -7px;
     left: -47px;
     content: "";
     min-width: 40px;
@@ -141,11 +189,11 @@
 
     @media (min-width: $tablet-width) {
       position: relative;
-      top: -10px;
+      top: 1px;
       left: auto;
       min-width: 77px;
       min-height: 72px;
-      margin-bottom: 14px;
+      margin-bottom: 30px;
     }
   }
 
@@ -155,10 +203,26 @@
 
   &--food::before {
     background-image: url("../img/food-icon.svg");
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
+    }
   }
 
   &--souvenirs::before {
     background-image: url("../img/souvenirs-icon.svg");
+    top: -9px;
+    left: -44px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: 9px;
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 25px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -175,6 +239,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    height: 256px;
   }
 }
 
@@ -187,7 +252,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    left: -16px;
+    left: -12px;
     height: 1px;
     width: 8px;
     background-color: $white-color-1;
@@ -197,7 +262,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    right: -16px;
+    right: -12px;
     height: 1px;
     width: 8px;
     background-color: $white-color-1;
@@ -205,6 +270,10 @@
 
   &--with-image {
     color: $white-color-1;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 24px;
   }
 }
 

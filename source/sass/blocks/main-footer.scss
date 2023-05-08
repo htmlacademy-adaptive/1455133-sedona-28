@@ -11,7 +11,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  row-gap: 30px;
+  row-gap: 29px;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -20,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 30px 120px;
+    padding: 36px 121px;
   }
 }
 

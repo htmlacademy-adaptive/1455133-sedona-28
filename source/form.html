@@ -6,243 +6,254 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона." width="185" height="96">
-    </a>
-    <nav class="main-header__nav main-nav main-nav--closed">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item main-nav__list-item--active main-nav__list-item--main-page">
-          <a class="main-nav__link" href="index.html">
-            Главная
+  <div class="page__container">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="img/header-logo.svg" alt="Город Седона." width="185" height="96">
+      </a>
+      <nav class="main-nav main-nav--closed main-header__nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item main-nav__list-item--main-page">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--photo">
+            <a class="main-nav__link" href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--form">
+            <a class="main-nav__link main-nav__link--current">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__list-item main-nav__list-item--academy">
+            <a class="main-nav__link" href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+    </header>
+    <main class="main-container main-container--form-page">
+      <section class="hero-block hero-block--form-page">
+        <h1 class="visually-hidden">Городок Седона - лучший выбор для туриста</h1>
+        <img class="hero-block__image hero-block__image--form-page" alt="Седона" src="img/sedona-catalog-page.svg">
+      </section>
+      <section class="review">
+        <div class="introduction introduction--form-page review__introduction">
+          <h2 class="title review__introduction-title">Оставьте свой отзыв</h2>
+          <p class="text-description review__introduction-description">Помогите нашим отелям стать лучше! оставьте отзыв
+            о
+            них, а также о
+            посещенных вами достопримечательностях</p>
+        </div>
+        <div class="form-wrapper review__form-wrapper">
+          <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="review-kit review-kit--user-name review__form-user-name">
+              <legend class="title review__form-title">Представьтесь:</legend>
+              <ul class="review__list review__list--name">
+                <li class="review__form-list-item">
+                  <label class="text-description review__form-label review__form-label--user-data"
+                    for="name">Имя*:</label>
+                  <input class="review__form-data review__form-data--user-data" type="text" name="name" id="name"
+                    placeholder="Введите Имя" value="Пётр">
+                </li>
+                <li class="review__form-list-item">
+                  <label class="text-description review__form-label review__form-label--user-data"
+                    for="surname">Фамилия*:</label>
+                  <input class="review__form-data review__form-data--user-data" type="text" name="surname" id="surname"
+                    placeholder="Введите Фамилию" value="Пустота">
+                </li>
+                <li class="review__form-list-item review__form-list-item--patronymic">
+                  <label class="text-description review__form-label review__form-label--user-data"
+                    for="patronymic">Отчество:</label>
+                  <input class="review__form-data review__form-data--user-data" type="text" name="patronymic"
+                    id="patronymic" placeholder="Введите Отчество" value="Викторович">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="review-kit review__form-contacts">
+              <legend class="title review__form-title">Контактная информация:</legend>
+              <ul class="review__list review__list--contacts">
+                <li class="review__form-list-item review__form-list-item--contact review__form-list-item--phone">
+                  <label class="text-description review__form-label review__form-label--user-data"
+                    for="phone">Контактный
+                    телефон*:</label>
+                  <input class="review__form-data review__form-data--user-data review__form-data--contacts" type="number" name="phone" id="phone"
+                    placeholder="Введите телефон">
+                </li>
+                <li class="review__form-list-item review__form-list-item--contact review__form-list-item--email">
+                  <label class="text-description review__form-label review__form-label--user-data"
+                    for="email">Электронная
+                    почта*:</label>
+                  <input class="review__form-data review__form-data--user-data review__form-data--contacts" type="email" name="email" id="email"
+                    placeholder="Введите e-mail">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="review-kit review__form-impression">
+              <legend class="title review__form-title review__form-title--impression">Ваше общее впечатление:</legend>
+              <ul class="review__list review__list--choice review__list--impressions">
+                <li class="review__form-list-item review__form-list-item--choice">
+                  <label class="title title--label review__form-label review__form-label--impression">
+                    <input class="review__form-data review__form-data--choice review__form-data--radio" type="radio"
+                      name="impression" value="positive" checked>
+                    <span class="review__form-radio"></span>
+                    <span class="input-value review__form-value">Скорее положительное</span>
+                  </label>
+                </li>
+                <li class="review__form-list-item review__form-list-item--choice">
+                  <label class="title title--label review__form-label review__form-label--impression">
+                    <input class="review__form-data review__form-data--choice review__form-data--radio" type="radio"
+                      name="impression" value="negative">
+                    <span class="review__form-radio"></span>
+                    <span class="input-value review__form-value review__form-value--negative">Скорее
+                      отрицательное</span>
+                  </label>
+                </li>
+                <li class="review__form-list-item review__form-list-item--choice">
+                  <label class="title title--label review__form-label review__form-label--impression">
+                    <input class="title review__form-data review__form-data--choice review__form-data--radio"
+                      type="radio" name="impression" value="difficult">
+                    <span class="review__form-radio"></span>
+                    <span class="input-value review__form-value review__form-value--difficult">Затрудняюсь
+                      ответить</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="review-kit review__form-sight">
+              <legend class="title review__form-title review__form-title--sights">Посещенные достопримечательности:
+              </legend>
+              <ul class="review__list review__list--choice review__list--sights">
+                <li class="review__form-list-item review__form-list-item--choice review__form-list-item--devils-bridge">
+                  <label class="title title--label review__form-label review__form-label--sights" for="devils-bridge">
+                    <input class="review__form-data review__form-data--choice" type="checkbox" name="devils bridge"
+                      id="devils-bridge" checked>
+                    <span class="review__form-checkbox"></span>
+                    <span class="input-value review__form-value">Мост Дьявола</span>
+                  </label>
+                </li>
+                <li class="review__form-list-item review__form-list-item--choice review__form-list-item--mountain-bell">
+                  <label class="title title--label review__form-label review__form-label--sights" for="mountain-bell">
+                    <input class="review__form-data review__form-data--choice" type="checkbox" name="mountain bell"
+                      id="mountain-bell" checked>
+                    <span class="review__form-checkbox"></span>
+                    <span class="input-value review__form-value">Гора-Колокол</span>
+                  </label>
+                </li>
+                <li class="review__form-list-item review__form-list-item--choice review__form-list-item--slide-park">
+                  <label class="title title--label review__form-label review__form-label--sights" for="slide-park">
+                    <input class="review__form-data review__form-data--choice" type="checkbox" name="slide park"
+                      id="slide-park" checked>
+                    <span class="review__form-checkbox"></span>
+                    <span class="input-value review__form-value">Слайд-парк</span>
+                  </label>
+                </li>
+                <li class="review__form-list-item review__form-list-item--choice review__form-list-item--red-rocks">
+                  <label class="title title--label review__form-label review__form-label--sights" for="red-rocks">
+                    <input class="review__form-data review__form-data--choice" type="checkbox" name="red rocks"
+                      id="red-rocks">
+                    <span class="review__form-checkbox"></span>
+                    <span class="input-value review__form-value">Красные скалы</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="review-kit review__form-emotion">
+              <legend class="title review__form-title">Опишите свои эмоции:</legend>
+              <textarea class="review__form-data review__form-data--emotion" name="emotion"
+                placeholder="Опишите подробно все свои восторги"></textarea>
+            </fieldset>
+            <div class="review__button-wrapper">
+              <button class="button review__form-button" type="submit">Отправить отзыв</button>
+              <span class="review__form-help">* — обязательные поля</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper main-footer__wrapper--form-page">
+        <span class="title main-footer__hashtag">#visitsedona</span>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none"
+                viewBox="0 0 24 14">
+                <path fill="#fff" fill-rule="evenodd"
+                  d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link-telegram" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Телеграм</span>
+              <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none"
+                viewBox="0 0 22 18">
+                <path fill="#fff"
+                  d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link-youtube" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Ютьюб</span>
+              <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
+                viewBox="0 0 20 14">
+                <path fill="#fff"
+                  d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="copyright main-footer__copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="text-description copyright__text">Разработано</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
+              <path fill="currentColor"
+                d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
+            </svg>
           </a>
-        </li>
-        <li class="main-nav__list-item main-nav__list-item--photo">
-          <a class="main-nav__link" href="catalog.html">
-            Фото и видео
-          </a>
-        </li>
-        <li class="main-nav__list-item main-nav__list-item--form">
-          <a class="main-nav__link">
-            Форма отзыва
-          </a>
-        </li>
-        <li class="main-nav__list-item main-nav__list-item--academy">
-          <a class="main-nav__link" href="#">
-            HTML Academy
-          </a>
-        </li>
-      </ul>
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-    </nav>
-  </header>
-  <main class="main-container main-container--form-page">
-    <section class="hero-block hero-block--form-page">
-      <h1 class="visually-hidden">Городок Седона - лучший выбор для туриста</h1>
-      <img class="hero-block__image hero-block__image--form-page" alt="Седона" src="img/sedona-catalog-page.svg">
-    </section>
-    <section class="review">
-      <div class="review__introduction introduction">
-        <h2 class="review__introduction-title title">Оставьте свой отзыв</h2>
-        <p class="review__introduction-description text-description">Помогите нашим отелям стать лучше! оставьте отзыв о
-          них, а также о
-          посещенных вами достопримечательностях</p>
+        </div>
       </div>
-      <div class="review__form-wrapper form-wrapper">
-        <form class="review__form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="review__form-user-name review-kit">
-            <legend class="review__form-title title">Представьтесь:</legend>
-            <ul class="review__list review__list--name">
-              <li class="review__form-list-item">
-                <label class="review__form-label review__form-label--user-data text-description"
-                  for="name">Имя*:</label>
-                <input class="review__form-data review__form-data--user-data" type="text" name="name" id="name"
-                  placeholder="Введите Имя" value="Пётр">
-              </li>
-              <li class="review__form-list-item">
-                <label class="review__form-label review__form-label--user-data text-description"
-                  for="surname">Фамилия*:</label>
-                <input class="review__form-data review__form-data--user-data" type="text" name="surname" id="surname"
-                  placeholder="Введите Фамилию" value="Пустота">
-              </li>
-              <li class="review__form-list-item review__form-list-item--patronymic">
-                <label class="review__form-label review__form-label--user-data text-description"
-                  for="patronymic">Отчество:</label>
-                <input class="review__form-data review__form-data--user-data" type="text" name="patronymic"
-                  id="patronymic" placeholder="Введите Отчество" value="Викторович">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review__form-contacts review-kit">
-            <legend class="review__form-title title">Контактная информация:</legend>
-            <ul class="review__list review__list--contacts">
-              <li class="review__form-list-item review__form-list-item--contact review__form-list-item--phone">
-                <label class="review__form-label review__form-label--user-data text-description" for="phone">Контактный
-                  телефон*:</label>
-                <input class="review__form-data review__form-data--user-data" type="number" name="phone" id="phone"
-                  placeholder="Введите телефон">
-              </li>
-              <li class="review__form-list-item review__form-list-item--contact review__form-list-item--email">
-                <label class="review__form-label review__form-label--user-data text-description" for="email">Электронная
-                  почта*:</label>
-                <input class="review__form-data review__form-data--user-data" type="email" name="email" id="email"
-                  placeholder="Введите e-mail">
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review__form-impression review-kit">
-            <legend class="review__form-title title review__form-title--impression">Ваше общее впечатление:</legend>
-            <ul class="review__list review__list--choice review__list--impressions">
-              <li class="review__form-list-item review__form-list-item--choice">
-                <label class="review__form-label title title--label review__form-label--impression">
-                  <input class="review__form-data review__form-data--choice review__form-data--radio" type="radio"
-                    name="impression" value="positive" checked>
-                  <span class="review__form-radio"></span>
-                  <span class="review__form-value input-value">Скорее положительное</span>
-                </label>
-              </li>
-              <li class="review__form-list-item review__form-list-item--choice">
-                <label class="review__form-label title title--label review__form-label--impression">
-                  <input class="review__form-data review__form-data--choice review__form-data--radio" type="radio"
-                    name="impression" value="negative">
-                  <span class="review__form-radio"></span>
-                  <span class="review__form-value review__form-value--negative input-value">Скорее отрицательное</span>
-                </label>
-              </li>
-              <li class="review__form-list-item review__form-list-item--choice">
-                <label class="review__form-label title title--label review__form-label--impression">
-                  <input class="review__form-data title review__form-data--choice review__form-data--radio" type="radio"
-                    name="impression" value="difficult">
-                  <span class="review__form-radio"></span>
-                  <span class="review__form-value review__form-value--difficult input-value">Затрудняюсь ответить</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review__form-sight review-kit">
-            <legend class="review__form-title review__form-title--sights title">Посещенные достопримечательности:
-            </legend>
-            <ul class="review__list review__list--choice review__list--sights">
-              <li class="review__form-list-item review__form-list-item--choice">
-                <label class="review__form-label title title--label" for="devils-bridge">
-                  <input class="review__form-data review__form-data--choice" type="checkbox" name="devils bridge"
-                    id="devils-bridge" checked>
-                  <span class="review__form-checkbox"></span>
-                  <span class="review__form-value input-value">Мост Дьявола</span>
-                </label>
-              </li>
-              <li class="review__form-list-item review__form-list-item--choice">
-                <label class="review__form-label title title--label" for="mountain-bell">
-                  <input class="review__form-data review__form-data--choice" type="checkbox" name="mountain bell"
-                    id="mountain-bell" checked>
-                  <span class="review__form-checkbox"></span>
-                  <span class="review__form-value input-value">Гора-Колокол</span>
-                </label>
-              </li>
-              <li class="review__form-list-item review__form-list-item--choice">
-                <label class="review__form-label title title--label" for="slide-park">
-                  <input class="review__form-data review__form-data--choice" type="checkbox" name="slide park"
-                    id="slide-park" checked>
-                  <span class="review__form-checkbox"></span>
-                  <span class="review__form-value input-value">Слайд-парк</span>
-                </label>
-              </li>
-              <li class="review__form-list-item review__form-list-item--choice">
-                <label class="review__form-label title title--label" for="red-rocks">
-                  <input class="review__form-data review__form-data--choice" type="checkbox" name="red rocks"
-                    id="red-rocks">
-                  <span class="review__form-checkbox"></span>
-                  <span class="review__form-value input-value">Красные скалы</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="review__form-emotion review-kit">
-            <legend class="review__form-title title">Опишите свои эмоции:</legend>
-            <textarea class="review__form-data review__form-data--emotion" name="emotion"
-              placeholder="Опишите подробно все свои восторги"></textarea>
-            <!-- <input class="review__form-data review__form-data--emotion" type="text" name="emotion"
-              placeholder="Опишите подробно все свои восторги"> -->
-          </fieldset>
-          <div class="review__button-wrapper">
-            <button class="button review__form-button" type="submit">Отправить отзыв</button>
-            <span class="review__form-help">* — обязательные поля</span>
+    </footer>
+    <script src="js/script.js"></script>
+    <div class="modal">
+      <div class="modal__box modal__box--error">
+        <div class="modal__content-wrapper modal__content-wrapper--error">
+          <p class="title modal__title">Что-то пошло не так!</p>
+          <p class="text-description modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы
+            забыли их заполнить
+          </p>
+          <button class="button modal__button" type="submit">Ок</button>
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal__box modal__box--success">
+        <div class="modal__content-wrapper modal__content-wrapper--success">
+          <p class="title modal__title modal__title--success">Ваш отзыв отправлен!</p>
+          <p class="text-description modal__text modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к
+            нам.<br> В ближайшее время
+            мы
+            опубликуем его на сайте.</p>
+          <div class="modal__button-wrapper modal__button-wrapper--success">
+            <button class="button modal__button modal__button--success" type="submit">Закрыть окно</button>
           </div>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <span class="main-footer__hashtag title">#visitsedona</span>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link-vk" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">ВКонтакте</span>
-            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="14" fill="none"
-              viewBox="0 0 24 14">
-              <path fill="#fff" fill-rule="evenodd"
-                d="M23.45.95c.17-.55 0-.95-.8-.95h-2.62c-.67 0-.98.35-1.14.73 0 0-1.34 3.2-3.23 5.27-.61.6-.89.8-1.22.8-.17 0-.42-.2-.42-.74V.95c0-.66-.18-.95-.74-.95H9.15c-.42 0-.67.3-.67.6 0 .61.95.76 1.05 2.5v3.8c0 .84-.16.99-.5.99-.88 0-3.05-3.21-4.33-6.89-.25-.71-.5-1-1.17-1H.9C.15 0 0 .35 0 .73c0 .68.89 4.07 4.14 8.55C6.32 12.34 9.38 14 12.15 14c1.67 0 1.88-.37 1.88-1v-2.32c0-.73.16-.88.69-.88.38 0 1.05.2 2.61 1.67C19.11 13.22 19.4 14 20.41 14h2.62c.75 0 1.13-.37.91-1.1-.24-.72-1.09-1.77-2.21-3.02-.62-.7-1.54-1.47-1.81-1.86-.4-.49-.28-.7 0-1.14 0 0 3.2-4.43 3.53-5.93Z"
-                clip-rule="evenodd" />
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link-telegram" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Телеграм</span>
-            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="22" height="18" fill="none"
-              viewBox="0 0 22 18">
-              <path fill="#fff"
-                d="m21.44 1.62-3.17 14.95c-.24 1.05-.86 1.31-1.75.82l-4.83-3.56-2.33 2.24c-.25.26-.47.47-.97.47l.35-4.91 8.95-8.09c.39-.35-.09-.54-.6-.2L6.01 10.32 1.26 8.82C.22 8.5.21 7.8 1.48 7.3L20.1.11c.87-.32 1.62.2 1.34 1.51Z" />
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social-list__link-youtube" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Ютьюб</span>
-            <svg class="social-list__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="14" fill="none"
-              viewBox="0 0 20 14">
-              <path fill="#fff"
-                d="M17.18 0H2.81C1.31 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.81 14h14.37A2.8 2.8 0 0 0 20 11.2V2.8c.1-1.5-1.2-2.8-2.8-2.8ZM7.03 10.4V3.6L13.87 7l-6.84 3.4Z" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__copyright copyright">
-        <span class="copyright__text text-description">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" fill="none" viewBox="0 0 27 35">
-            <path fill="#000"
-              d="M13.65.45h-.1L.05 1.85v24.7l13.5 8 13.4-8V1.85L13.65.45Zm11.4 12.1-11.5-6.8v-.1h-.1l-.1-.1v.1l-11.4 6.9v-9l11.5-1.2 11.6 1.2v9Zm-11.6-5.3 11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1-11.4-6.7 11.4-6.8Zm-11.5 8.3 11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9-11.5-6.8v-9.9Z" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
-  <div class="modal-container modal-container--error">
-    <div class="modal modal--error">
-      <p class="modal__title title">Что-то пошло не так!</p>
-      <p class="modal__text modal__text--error text-description">Проверьте поля, выделенные красным, скорее всего вы
-        забыли их заполнить
-      </p>
-      <button class="modal__button button" type="button">Ок</button>
-    </div>
-  </div>
-  <div class="modal-container">
-    <div class="modal modal--success">
-      <p class="modal__title title">Ваш отзыв отправлен!</p>
-      <p class="modal__text modal__text--success text-description">Спасибо за ваше участие, ваш отзыв уже поступил к
-        нам. В ближайшее время
-        мы
-        опубликуем его на сайте.</p>
-      <div class="modal__button-wrapper">
-        <button class="modal__button modal__button--success button" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
   </div>

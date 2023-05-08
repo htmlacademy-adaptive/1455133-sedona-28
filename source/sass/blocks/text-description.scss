@@ -29,4 +29,46 @@
       text-align: center;
     }
   }
+
+  &--food {
+    @media (min-width: $tablet-width) {
+      padding: 0 13px;
+    }
+  }
+
+  &--housing {
+    @media (min-width: $desktop-width) {
+      width: 252px;
+    }
+  }
+
+  &--souvenirs {
+    @media (min-width: $desktop-width) {
+      width: 215px;
+    }
+  }
+
+  // // &--find-hotel {
+  // //   @media (min-width: $tablet-width) {
+  // //     margin-bottom: 2px;
+  // //   }
+  // }
+}
+
+br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   display: none;
+  // }
+
+  // display: none;
+}
+
+.advantages__text > br {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

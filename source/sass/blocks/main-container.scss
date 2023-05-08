@@ -4,19 +4,19 @@
   margin: 0 auto;
   background: $white-color-1;
 
-  &--form-page {
-    margin-bottom: 58px;
+  // &--form-page {
+  //   margin-bottom: 58px;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 64px;
-    }
-  }
+  //   @media (min-width: $tablet-width) {
+  //     margin-bottom: 64px;
+  //   }
+  // }
 
-  &--catalog-page {
-    margin-bottom: 27px;
+  // &--catalog-page {
+  //   margin-bottom: 27px;
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 35px;
-    }
-  }
+  //   @media (min-width: $tablet-width) {
+  //     margin-bottom: 35px;
+  //   }
+  // }
 }

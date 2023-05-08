@@ -3,16 +3,33 @@
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 20px;
+  padding: 18px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 60px;
   }
 }
 
+.video__play-button {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $white-color-1;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .video__title {
-  padding-top: 17px;
-  margin-bottom: 28px;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 32px;
@@ -37,8 +54,11 @@
   position: relative;
   display: block;
   width: 100%;
+  max-width: 800px;
   height: 177px;
   object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 6px;
 
   &::before {
     position: absolute;
@@ -51,6 +71,11 @@
 
   @media (min-width: $tablet-width) {
     height: 500px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 84px;
   }
 }
 
@@ -59,17 +84,11 @@
   position: relative;
 }
 
+//добавил дисплей, макс. ширину и маржин
 .video__link {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
   cursor: pointer;
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: 49%;
-    top: 45%;
-    background-image: url("../img/play-button.svg");
-    width: 48px;
-    height: 54px;
-    z-index: 1;
-  }
+  position: relative;
 }
