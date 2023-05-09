@@ -1,4 +1,6 @@
 .find-hotel__text-wrapper {
+  display: flex;
+  flex-direction: column;
   padding: 40px 29px 32px 29px;
 
   @media (min-width: $tablet-width) {

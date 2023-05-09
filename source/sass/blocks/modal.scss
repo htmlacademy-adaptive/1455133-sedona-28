@@ -39,13 +39,14 @@
 
     @media (min-width: $tablet-width) {
       top: 283px;
-      min-width: 400px;
+      max-width: 400px;
       height: 347px;
     }
 
     @media (min-width: $desktop-width) {
       top: 244px;
       left: -21px;
+      // max-width: 400px;
     }
   }
 
@@ -53,7 +54,7 @@
     top: 340px;
 
     @media (min-width: $tablet-width) {
-      min-width: 640px;
+      max-width: 640px;
       top: 243px;
       height: 347px;
     }
@@ -61,6 +62,7 @@
     @media (min-width: $desktop-width) {
       top: 285px;
       bottom: 850px;
+      // max-width: 640px;
     }
   }
 }
