@@ -67,15 +67,20 @@
 }
 
 .photo-card__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-height: 80px;
     grid-column: 1 / 3;
     background-color: $white-color-2;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 
     &--main {
       padding: 21px 20px 0;
@@ -90,7 +95,6 @@
     position: absolute;
     content: "";
     bottom: 0;
-    width: calc(100% - 40px);
     background-color: transparentize($color: $black-color-1, $amount: 0.7);
   }
 }
@@ -117,6 +121,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
 
   @media (min-width: $desktop-width) {
     &--main {

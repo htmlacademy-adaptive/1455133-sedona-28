@@ -89,15 +89,15 @@
                   <label class="text-description review__form-label review__form-label--user-data"
                     for="phone">Контактный
                     телефон*:</label>
-                  <input class="review__form-data review__form-data--user-data review__form-data--contacts" type="number" name="phone" id="phone"
-                    placeholder="Введите телефон" required>
+                  <input class="review__form-data review__form-data--user-data review__form-data--contacts"
+                    type="number" name="phone" id="phone" placeholder="Введите телефон" required>
                 </li>
                 <li class="review__form-list-item review__form-list-item--contact review__form-list-item--email">
                   <label class="text-description review__form-label review__form-label--user-data"
                     for="email">Электронная
                     почта*:</label>
-                  <input class="review__form-data review__form-data--user-data review__form-data--contacts" type="email" name="email" id="email"
-                    placeholder="Введите e-mail" required>
+                  <input class="review__form-data review__form-data--user-data review__form-data--contacts" type="email"
+                    name="email" id="email" placeholder="Введите e-mail" required>
                 </li>
               </ul>
             </fieldset>
@@ -223,19 +223,19 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
-    <div class="modal">
-      <div class="modal__box modal__box--error">
+    <div class="modal modal--hidden">
+      <div class="modal__box modal__box--error modal__box--hidden">
         <div class="modal__content-wrapper modal__content-wrapper--error">
           <p class="title modal__title">Что-то пошло не так!</p>
           <p class="text-description modal__text modal__text--error">Проверьте поля, выделенные красным, скорее всего вы
             забыли их заполнить
           </p>
-          <button class="button modal__button" type="submit">Ок</button>
+          <button class="button modal__button modal__button--error" type="submit">Ок</button>
         </div>
       </div>
     </div>
-    <div class="modal">
-      <div class="modal__box modal__box--success">
+    <div class="modal modal--hidden">
+      <div class="modal__box modal__box--success modal__box--hidden">
         <div class="modal__content-wrapper modal__content-wrapper--success">
           <p class="title modal__title modal__title--success">Ваш отзыв отправлен!</p>
           <p class="text-description modal__text modal__text--success">Спасибо за ваше участие, ваш отзыв уже поступил к
