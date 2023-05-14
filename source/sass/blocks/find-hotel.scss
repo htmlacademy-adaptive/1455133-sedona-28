@@ -1,12 +1,14 @@
 .find-hotel__text-wrapper {
-  padding: 40px 29px 32px 29px;
+  display: flex;
+  flex-direction: column;
+  padding: 31px 29px 32px 29px;
 
   @media (min-width: $tablet-width) {
     padding: 59px 0 43px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 59px 0 44px;
+    padding: 70px 0 44px;
   }
 }
 
@@ -18,6 +20,10 @@
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin-bottom: 55px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 59px;
   }
 }

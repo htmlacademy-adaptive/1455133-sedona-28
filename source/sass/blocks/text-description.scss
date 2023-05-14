@@ -13,6 +13,14 @@
     color: $white-color-1;
   }
 
+  &--advantages-without-image {
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 16px;
+    }
+  }
+
   &--card-description {
     text-transform: none;
     text-align: left;

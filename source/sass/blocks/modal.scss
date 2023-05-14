@@ -22,25 +22,26 @@
   }
 }
 
-
 .modal__content-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
-  height: 280px;
   margin: 0 auto;
   background-color: transparentize($color: $white-color-1, $amount: 0);
   z-index: 11;
+  overflow: auto;
 
   &--error {
     top: 98px;
+    min-width: 320px;
+    height: 280px;
 
     @media (min-width: $tablet-width) {
       top: 283px;
-      min-width: 400px;
-      height: 347px;
+      width: 400px;
+      max-width: 100%;
+      min-height: 347px;
     }
 
     @media (min-width: $desktop-width) {
@@ -51,11 +52,13 @@
 
   &--success {
     top: 340px;
+    min-width: 320px;
+    max-height: 323px;
 
     @media (min-width: $tablet-width) {
-      min-width: 640px;
       top: 243px;
-      height: 347px;
+      min-width: 640px;
+      max-height: 347px;
     }
 
     @media (min-width: $desktop-width) {
@@ -72,8 +75,8 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 40px;
+    margin: 0 80px;
     margin-bottom: 24px;
-    width: 250px;
   }
 
   &--success {
@@ -82,9 +85,8 @@
     @media (min-width: $tablet-width) {
       font-size: 30px;
       line-height: 26px;
-      width: 444px;
       padding-top: 50px;
-      margin-bottom: 30px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -117,16 +119,21 @@
   display: block;
 }
 
-
 .modal__button {
   display: block;
   min-width: 180px;
+  min-height: auto;
   font-size: 18px;
   cursor: pointer;
+  white-space: pre-wrap;
+  max-width: 100%;
+  max-height: 100%;
 
-  @media (min-width: $tablet-width) {
-    min-width: 272px;
-    padding: 20px 40px 20px;
+  &--error {
+    @media (min-width: $tablet-width) {
+      min-width: 272px;
+      padding: 20px 40px 20px;
+    }
   }
 
   &--success {
@@ -145,12 +152,13 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  min-height: 98px;
+  height: 98px;
+  padding: 20px 0;
   background-color: $white-color-2;
 
   &--success {
     @media (min-width: $tablet-width) {
-      min-height: 146px;
+      padding: 25px 0;
     }
   }
 }

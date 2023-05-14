@@ -1,18 +1,20 @@
 .review__form {
   padding: 0 20px;
-  // margin-bottom: 22px;
+  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 58px;
     padding: 0 60px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 120px;
-    column-gap: 100px;
-    margin-bottom: 63px;
+    grid-template-columns: repeat(2, 480px);
+    padding: 0 95px;
+    column-gap: 50px;
+    margin-bottom: 53px;
   }
 }
 
@@ -31,7 +33,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      right: -50px;
+      right: -26px;
     }
   }
 }
@@ -56,7 +58,8 @@
 
     @media (min-width: $desktop-width) {
       width: 280px;
-      top: -70px;
+      top: -69px;
+      left: 25px;
     }
   }
 
@@ -73,7 +76,8 @@
 
     @media (min-width: $desktop-width) {
       width: 280px;
-      top: -70px;
+      top: -69px;
+      right: 31px;
     }
   }
 }
@@ -99,6 +103,7 @@
     @media (min-width: $desktop-width) {
       width: 280px;
       top: -96px;
+      left: 25px;
     }
   }
 
@@ -116,6 +121,7 @@
     @media (min-width: $desktop-width) {
       width: 280px;
       top: -96px;
+      right: 31px;
     }
   }
 }
@@ -130,6 +136,10 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 25px;
   }
 }
 
@@ -165,7 +175,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 271px);
     }
   }
 
@@ -211,7 +221,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 230px);
       padding: 0 0 0 45px;
       column-gap: normal;
       margin-bottom: 98px;
@@ -236,7 +246,7 @@
     position: absolute;
     content: "";
     right: 0;
-    top: 21px;
+    bottom: 0;
     background-color: $grey-color-2;
     background-repeat: no-repeat;
     background-position: center;
@@ -278,6 +288,7 @@
 }
 
 .review__form-title {
+  margin: 0 auto;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -339,7 +350,8 @@
   }
 
   &--emotion {
-    width: 100%;
+    min-width: 279px;
+    max-width: 90vw;
     height: 150px;
     box-sizing: border-box;
     padding: 16px;
@@ -352,13 +364,14 @@
 
     @media (min-width: $desktop-width) {
       width: 768px;
+      max-width: 768px;
       margin-bottom: 49px;
     }
   }
 
   &--user-data {
     max-height: 58px;
-    padding: 16px;
+    padding: 12px;
     position: relative;
   }
 
@@ -377,6 +390,7 @@
   padding: 0 20px;
   opacity: 0.6;
   transform: translateX(70px);
+  max-width: 180px;
 
   @media (min-width: $tablet-width) {
     justify-self: flex-end;
@@ -407,7 +421,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -418,6 +434,7 @@
   @media (min-width: $desktop-width) {
     width: 768px;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
 
@@ -433,8 +450,7 @@
   margin-left: 46px;
 
   @media (min-width: $desktop-width) {
-    margin-left: 42px;
-    white-space: nowrap;
+    margin-left: 41px;
   }
 }
 
