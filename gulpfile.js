@@ -77,7 +77,7 @@ const createWebp = () => {
 //Svg-sprite
 
 const sprite = () => {
-  return gulp.src("source/img/social-network-icon/*.svg")
+  return gulp.src("source/img/icons/*.svg")
     .pipe(svgo())
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))

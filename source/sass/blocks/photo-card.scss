@@ -96,6 +96,14 @@
     content: "";
     bottom: 0;
     background-color: transparentize($color: $black-color-1, $amount: 0.7);
+
+    &--main {
+      padding: 22px 20px 0;
+    }
+
+    &--other {
+      padding: 20px 20px 0;
+    }
   }
 }
 
@@ -117,13 +125,15 @@
 .photo-card__like-quantity-wrapper {
   display: flex;
   align-items: center;
+  color: $black-color-1;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 
-
   @media (min-width: $desktop-width) {
+    color: $white-color-1;
+
     &--main {
       margin-bottom: 23px;
     }

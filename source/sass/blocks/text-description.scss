@@ -14,7 +14,11 @@
   }
 
   &--advantages-without-image {
-    margin-bottom: 26px;
+    margin-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 16px;
+    }
   }
 
   &--card-description {

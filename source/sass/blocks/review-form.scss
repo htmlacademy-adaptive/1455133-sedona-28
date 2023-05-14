@@ -492,7 +492,7 @@
   }
 }
 
-.review__form-data:checked+.review__form-radio::after {
+.review__form-data:checked + .review__form-radio::after {
   width: 16px;
   height: 16px;
   background-color: $black-color-2;
@@ -517,7 +517,7 @@
   outline: 3px solid $black-color-1;
 }
 
-.review__form-data:checked+.review__form-checkbox::after {
+.review__form-data:checked + .review__form-checkbox::after {
   top: 5px;
   left: -6px;
   width: 22px;
