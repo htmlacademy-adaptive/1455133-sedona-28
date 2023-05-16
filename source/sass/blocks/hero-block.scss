@@ -5,6 +5,7 @@
   background-size: cover, cover;
   background-color: $blue-color-1;
   padding: 90px 0 85px 0;
+  background-color: $blue-color-1;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/divider-test.svg"), url("../img/hero-background@2x.webp");
