@@ -42,7 +42,7 @@
           </li>
         </ul>
         <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Меню</span>
         </button>
       </nav>
     </header>
@@ -64,104 +64,108 @@
         </div>
         <ul class="catalog__list">
           <li class="photo-card photo-card--main catalog__item catalog__item--main">
-            <a class="photo-card__link" href="#">
+            <a class="photo-card__link" href="#" aria-label="Ссылка на полноформатное изображение">
               <picture>
                 <source media="(min-width: 1200px)"
                   srcset="img/catalog-image/non-native-spaces-desktop.webp 1x, img/catalog-image/non-native-spaces-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-image/non-native-spaces-tablet.webp 1x, img/catalog-image/non-native-spaces-tablet@2x.webp 2x">
-                <img class="photo-card__image photo-card__image--main" alt="Неродные просторы."
+                <img class="photo-card__image photo-card__image--main" alt="Дорога в Седону на фоне заката"
                   src="img/catalog-image/non-native-spaces.webp" srcset="img/catalog-image/non-native-spaces@2x.webp 2x"
                   width="280" height="280">
               </picture>
-            <div class="photo-card__wrapper photo-card__wrapper--main">
-              <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--main">
-                <h3 class="title title--card-title">Неродные просторы</h3>
-                <span class="text-description text-description--card-description">Автор фото: Борис</span>
+              <div class="photo-card__wrapper photo-card__wrapper--main">
+                <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--main">
+                  <h3 class="title title--card-title photo-card__title">Неродные просторы</h3>
+                  <span class="text-description text-description--card-description photo-card__description photo-card__description--main">Автор фото: Борис</span>
+                </div>
+                <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--main">
+                  <svg class="photo-card__like-quantity-icon" width="23" height="21"
+                    aria-label="Количество пользователей, которым понравилось фото:">
+                    <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
+                  </svg>
+                  <span class="title title--card-title photo-card__like-quantity">1350</span>
+                </div>
               </div>
-              <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--main">
-                <svg class="photo-card__like-quantity-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
-                </svg>
-                <span class="title title--card-title photo-card__like-quantity">1350</span>
-              </div>
-            </div>
-          </a>
+            </a>
           </li>
           <li class="photo-card catalog__item">
-            <a class="photo-card__link" href="#">
+            <a class="photo-card__link" href="#" aria-label="Ссылка на полноформатное изображение">
               <picture>
                 <source media="(min-width: 1200px)"
                   srcset="img/catalog-image/native-vegetation-desktop.webp 1x, img/catalog-image/native-vegetation-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-image/native-vegetation-tablet.webp 1x, img/catalog-image/native-vegetation-tablet@2x.webp 2x">
-                <img class="photo-card__image photo-card__image--other" alt="Местная растительность."
+                <img class="photo-card__image photo-card__image--other" alt="Необычное растение"
                   src="img/catalog-image/native-vegetation.webp" srcset="img/catalog-image/native-vegetation@2x.webp 2x"
                   width="280" height="280">
               </picture>
-            <div class="photo-card__wrapper photo-card__wrapper--other">
-              <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--other">
-                <h3 class="title title--card-title">Местная растительность</h3>
-                <span class="text-description text-description--card-description">Автор фото: Сергей</span>
+              <div class="photo-card__wrapper photo-card__wrapper--other">
+                <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--other">
+                  <h3 class="title title--card-title photo-card__title">Местная растительность</h3>
+                  <span class="text-description text-description--card-description photo-card__description photo-card__description--other">Автор фото: Сергей</span>
+                </div>
+                <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--other">
+                  <svg class="photo-card__like-quantity-icon" width="23" height="21"
+                    aria-label="Количество пользователей, которым понравилось фото:">
+                    <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
+                  </svg>
+                  <span class="title title--card-title photo-card__like-quantity">143</span>
+                </div>
               </div>
-              <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--other">
-                <svg class="photo-card__like-quantity-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
-                </svg>
-                <span class="title title--card-title photo-card__like-quantity">143</span>
-              </div>
-            </div>
-          </a>
+            </a>
           </li>
           <li class="photo-card catalog__item">
-            <a class="photo-card__link" href="#">
+            <a class="photo-card__link" href="#" aria-label="Ссылка на полноформатное изображение">
               <picture>
                 <source media="(min-width: 1200px)"
                   srcset="img/catalog-image/road-to-north-desktop.webp 1x, img/catalog-image/road-to-north-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-image/road-to-north-tablet.webp 1x, img/catalog-image/road-to-north-tablet@2x.webp 2x">
-                <img class="photo-card__image photo-card__image--other" alt="Неродные просторы."
+                <img class="photo-card__image photo-card__image--other" alt="Серпантин в окружении деревьев и гор"
                   src="img/catalog-image/road-to-north.webp" srcset="img/catalog-image/road-to-north@2x.webp 2x"
                   width="280" height="280">
               </picture>
-            <div class="photo-card__wrapper photo-card__wrapper--other">
-              <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--other">
-                <h3 class="title title--card-title">Дорога на Север</h3>
-                <span class="text-description text-description--card-description">Автор фото: Петр</span>
+              <div class="photo-card__wrapper photo-card__wrapper--other">
+                <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--other">
+                  <h3 class="title title--card-title photo-card__title">Дорога на Север</h3>
+                  <span class="text-description text-description--card-description photo-card__description photo-card__description--other">Автор фото: Петр</span>
+                </div>
+                <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--other">
+                  <svg class="photo-card__like-quantity-icon" width="23" height="21"
+                    aria-label="Количество пользователей, которым понравилось фото:">
+                    <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
+                  </svg>
+                  <span class="title title--card-title photo-card__like-quantity">96</span>
+                </div>
               </div>
-              <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--other">
-                <svg class="photo-card__like-quantity-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
-                </svg>
-                <span class="title title--card-title photo-card__like-quantity">96</span>
-              </div>
-            </div>
-          </a>
+            </a>
           </li>
           <li class="photo-card catalog__item">
-            <a class="photo-card__link" href="#">
+            <a class="photo-card__link" href="#" aria-label="Ссылка на полноформатное изображение">
               <picture>
                 <source media="(min-width: 1200px)"
                   srcset="img/catalog-image/devils-bridge-catalog-desktop.webp 1x, img/catalog-image/devils-bridge-catalog-desktop@2x.webp 2x">
                 <source media="(min-width: 768px)"
                   srcset="img/catalog-image/devils-bridge-catalog-tablet.webp 1x, img/catalog-image/devils-bridge-catalog-tablet@2x.webp 2x">
-                <img class="photo-card__image photo-card__image--other" alt="Неродные просторы."
+                <img class="photo-card__image photo-card__image--other" alt="Каньон"
                   src="img/catalog-image/devils-bridge-catalog.webp"
                   srcset="img/catalog-image/devils-bridge-catalog@2x.webp 2x" width="280" height="280">
               </picture>
-            <div class="photo-card__wrapper photo-card__wrapper--other">
-              <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--other">
-                <h3 class="title title--card-title">Мост дьявола</h3>
-                <span class="text-description text-description--card-description">Автор фото: Антон</span>
+              <div class="photo-card__wrapper photo-card__wrapper--other">
+                <div class="card-description photo-card__text-wrapper photo-card__text-wrapper--other">
+                  <h3 class="title title--card-title photo-card__title">Мост дьявола</h3>
+                  <span class="text-description text-description--card-description photo-card__description photo-card__description--other">Автор фото: Антон</span>
+                </div>
+                <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--other">
+                  <svg class="photo-card__like-quantity-icon" width="23" height="21"
+                    aria-label="Количество пользователей, которым понравилось фото:">
+                    <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
+                  </svg>
+                  <span class="title title--card-title photo-card__like-quantity">254</span>
+                </div>
               </div>
-              <div class="photo-card__like-quantity-wrapper photo-card__like-quantity-wrapper--other">
-                <svg class="photo-card__like-quantity-icon" width="23" height="21">
-                  <use xlink:href="img/sprite.svg#catalog-like-icon"></use>
-                </svg>
-                <span class="title title--card-title photo-card__like-quantity">254</span>
-              </div>
-            </div>
-          </a>
+            </a>
           </li>
         </ul>
       </section>
@@ -170,7 +174,7 @@
         <p class="text-description video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
           очередной раз!</p>
         <div class="video__wrapper">
-          <a class="video__link" href="#">
+          <a class="video__link" href="#" aria-label="Ссылка на видеопрезентацию">
             <picture>
               <source media="(min-width: 1200px)"
                 srcset="img/video-preview-desktop.webp 1x, img/video-preview-desktop@2x.webp 2x">
@@ -179,7 +183,7 @@
               <img class="video__preview" src="img/video-preview.webp" srcset="img/video-preview@2x.webp"
                 alt="Местные красоты" width="280" height="177">
             </picture>
-            <svg class="video__play-button" width="48" height="54">
+            <svg class="video__play-button" width="48" height="54" aria-label="Кнопка воспроизведения видео">
               <use xlink:href="img/sprite.svg#catalog-play-button"></use>
             </svg>
           </a>
@@ -216,10 +220,11 @@
           </li>
         </ul>
         <div class="copyright main-footer__copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+            aria-label="Ссылка на сайт HTML-академии">
             <span class="text-description copyright__text">Разработано</span>
             <svg width="27" height="35">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy-footer-icon"></use>
             </svg>
           </a>
         </div>

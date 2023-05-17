@@ -4,26 +4,26 @@
   align-items: center;
   flex-wrap: wrap;
   padding: 37px 20px 0;
+  margin: 0;
   border-bottom: 1px solid $color-disabled-1;
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-bottom: 46px;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    margin-bottom: 53px;
-  }
-
-  &--form-page {
-    margin-bottom: 0;
+.introduction__title {
+  &--catalog {
+    margin: 0;
+    margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 83px;
+      padding-top: 28px;
+      margin-bottom: 19px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
+      padding-top: 59px;
     }
   }
 }
@@ -37,5 +37,13 @@
 
   &--catalog {
     margin-bottom: 36px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 88px;
+    }
   }
 }

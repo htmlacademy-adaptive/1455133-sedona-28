@@ -1,24 +1,21 @@
-.review__form {
+.review-form {
   padding: 0 20px;
-  margin-bottom: 47px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 58px;
     padding: 0 60px;
-    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 480px);
-    padding: 0 95px;
     column-gap: 50px;
-    margin-bottom: 53px;
+    padding: 0 95px;
   }
 }
 
-.review__form-user-name {
+.review-form__kit--user-name {
   position: relative;
 
   &::after {
@@ -38,7 +35,7 @@
   }
 }
 
-.review__form-impression {
+.review-form__kit--impression {
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -57,9 +54,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 280px;
       top: -69px;
       left: 25px;
+      width: 280px;
     }
   }
 
@@ -75,14 +72,14 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 280px;
       top: -69px;
       right: 31px;
+      width: 280px;
     }
   }
 }
 
-.review__form-sight {
+.review-form__kit--sight {
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -101,9 +98,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 280px;
       top: -96px;
       left: 25px;
+      width: 280px;
     }
   }
 
@@ -119,19 +116,19 @@
     }
 
     @media (min-width: $desktop-width) {
-      width: 280px;
       top: -96px;
       right: 31px;
+      width: 280px;
     }
   }
 }
 
-.review-kit {
+.review-form__kit {
   display: flex;
   border: none;
   border-bottom: 1px solid $color-disabled-1;
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-top: 24px;
 
   @media (min-width: $tablet-width) {
@@ -143,7 +140,7 @@
   }
 }
 
-.review__form-emotion {
+.review-form__kit--emotion {
   margin-bottom: 56px;
   border: none;
 
@@ -157,7 +154,7 @@
   }
 }
 
-.review__list {
+.review-form__list {
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -229,7 +226,7 @@
   }
 }
 
-.review__form-list-item {
+.review-form__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -287,7 +284,7 @@
   }
 }
 
-.review__form-title {
+.review-form__title {
   margin: 0 auto;
   margin-bottom: 20px;
 
@@ -322,7 +319,7 @@
   }
 }
 
-.review__form-data {
+.review-form__data {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -380,7 +377,7 @@
   }
 }
 
-.review__form-help {
+.review-form__help {
   display: block;
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
@@ -401,7 +398,7 @@
   }
 }
 
-.review__form-button {
+.review-form__button {
   display: block;
   width: 280px;
   border: none;
@@ -417,28 +414,29 @@
   }
 }
 
-.review__button-wrapper {
+.review-form__button-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     grid-column: -3 / -1;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
     width: 768px;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 65px;
   }
 }
 
-.review__form-label {
+.review-form__label {
   position: relative;
 
   &--user-data {
@@ -446,7 +444,7 @@
   }
 }
 
-.review__form-value {
+.review-form__value {
   margin-left: 46px;
 
   @media (min-width: $desktop-width) {
@@ -454,7 +452,7 @@
   }
 }
 
-.review__form-radio {
+.review-form__radio {
   position: relative;
 
   &::before,
@@ -473,7 +471,7 @@
   }
 }
 
-.review__form-checkbox {
+.review-form__checkbox {
   position: relative;
 
   &::before,
@@ -492,7 +490,7 @@
   }
 }
 
-.review__form-data:checked+.review__form-radio::after {
+.review-form__data:checked+.review-form__radio::after {
   width: 16px;
   height: 16px;
   background-color: $black-color-2;
@@ -500,20 +498,20 @@
   left: -4px;
 }
 
-.review__form-label--impression:hover .review__form-radio::before {
+.review-form__label--impression:hover .review-form__radio::before {
   background-color: $color-disabled-1;
 }
 
 
-.review__form-label--impression:active .review__form-radio::before {
+.review-form__label--impression:active .review-form__radio::before {
   background-color: $grey-color-4;
 }
 
-.review__form-label--impression:active .review__form-radio::after {
+.review-form__label--impression:active .review-form__radio::after {
   background-color: transparentize($color: $black-color-2, $amount: 0.7);
 }
 
-.review__form-data:checked+.review__form-checkbox::after {
+.review-form__data:checked+.review-form__checkbox::after {
   top: 5px;
   left: -6px;
   width: 22px;
@@ -521,20 +519,20 @@
   background-image: url("../img/check-mark.svg");
 }
 
-.review__form-label--sights:hover .review__form-checkbox::before {
+.review-form__label--sights:hover .review-form__checkbox::before {
   background-color: $color-disabled-1;
 }
 
 
-.review__form-label--sights:active .review__form-checkbox::before {
+.review-form__label--sights:active .review-form__checkbox::before {
   background-color: $grey-color-4;
 }
 
-.review__form-label--sights:active .review__form-checkbox::after {
+.review-form__label--sights:active .review-form__checkbox::after {
   background-image: url("../img/check-mark-active.svg");
 }
 
-.review__form-label:focus-within .review__form-checkbox::before,
-.review__form-label:focus-within .review__form-radio::before {
+.review-form__label:focus-within .review-form__checkbox::before,
+.review-form__label:focus-within .review-form__radio::before {
   outline: $black-color-1 solid 3px;
 }

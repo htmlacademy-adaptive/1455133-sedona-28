@@ -12,7 +12,7 @@
   margin: 0 auto;
   padding: 32px 27px 16px;
   box-sizing: border-box;
-  margin-bottom: 21px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     padding: 55px 31px 27px;
@@ -20,30 +20,26 @@
     box-sizing: border-box;
 
     &--annotation {
-      padding: 51px 130px 31px;
-      margin-bottom: 23px;
+      padding: 49px 130px 31px;
+      margin-bottom: 15px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--annotation {
-      padding: 61px 291px 27px;
-      margin-bottom: 18px;
+      padding: 60px 291px 27px;
+      margin-bottom: 9px;
     }
   }
 
   &--with-image {
     background-color: $blue-color-1;
     margin-bottom: 0;
-
-    // @media (min-width: $tablet-width) {
-    //   padding-bottom: 28px;
-    // }
   }
 
   &--without-image {
     background-color: $grey-color-1;
-    padding: 25px 33px;
+    padding: 24px 33px;
     margin: 0;
 
     @media (min-width: $tablet-width) {
@@ -56,7 +52,7 @@
   }
 
   &--road {
-    padding: 12px 33px;
+    padding: 16px 33px;
 
     @media (min-width: $tablet-width) {
       padding: 40px 31px 27px;
@@ -75,7 +71,7 @@
       order: 2;
       grid-column-start: 2;
       grid-column-end: 3;
-      padding: 45px 32px 27px;
+      padding: 49px 32px 27px;
     }
 
     @media (min-width: $desktop-width) {
@@ -84,14 +80,14 @@
   }
 
   &--first {
-    padding: 49px 27px 39px;
+    padding: 50px 27px 30px;
 
     @media (min-width: $tablet-width) {
-      padding: 55px 27px 30px;
+      padding: 55px 27px 23px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 30px 55px 30px;
+      padding: 30px 55px 22px;
     }
 
     &::before {
@@ -103,7 +99,6 @@
       background-image: url("../img/divider-mini.svg");
       background-repeat: no-repeat;
       background-size: cover;
-      // background-position: top center;
 
       @media (min-width: $tablet-width) {
         display: none;
@@ -145,7 +140,6 @@
 
     &--without-image {
       grid-template-columns: 1fr;
-      // height: 256px;
     }
 
     &--square {
@@ -171,7 +165,6 @@
   padding: 32px 18px 46px 65px;
   background: $white-color-1;
   height: 100%;
-  // width: 100%;
   max-width: 1200px;
 
   @media (min-width: $tablet-width) {
@@ -205,7 +198,7 @@
       left: auto;
       min-width: 77px;
       min-height: 72px;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
   }
 
@@ -229,7 +222,7 @@
     @media (min-width: $tablet-width) {
       top: 0;
       left: 9px;
-      margin-bottom: 15px;
+      margin-bottom: 18px;
     }
 
     @media (min-width: $desktop-width) {
@@ -249,17 +242,12 @@
   height: 100%;
   min-height: 256px;
   object-fit: cover;
-
-  // @media (min-width: $tablet-width) {
-  //   width: 100%;
-  //   height: 256px;
-  // }
 }
 
 .advantages__number {
   display: block;
   position: relative;
-  padding-bottom: 17px;
+  margin-bottom: 18px;
 
   &::before {
     content: "";
@@ -286,15 +274,75 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 24px;
+    margin-bottom: 23px;
   }
 }
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 37px;
+
+  &--list {
+    margin-bottom: 11px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+      margin-bottom: 11px;
+    }
+  }
+
+  &--devils-bridge {
+    margin-bottom: 10px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
+
+  &--without-image {
+    margin-bottom: 10px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+  }
+
+  &--non-list {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.advantages__text {
+  margin: 0;
+  margin-bottom: 9px;
+
+  &--devils-bridge {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__subitem-title {
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+
+.advantages__subitem-text {
+  margin: 0;
+}
+
+// .advantages__text--without-image {
+//   margin-bottom: 12px;
+// }
 
 .advantages__number--without-image::before,
 .advantages__number--without-image::after {
   background-color: $black-color-1;
 }
-
-// .advantages__text {
-//   margin-bottom: 26px;
-// }

@@ -5,7 +5,6 @@
   background-size: cover, cover;
   background-color: $blue-color-1;
   padding: 90px 0 85px 0;
-  background-color: $blue-color-1;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/divider-test.svg"), url("../img/hero-background@2x.webp");
@@ -31,18 +30,16 @@
   }
 
   &--form-page {
+    padding: 52px 46px 67px;
     background-image: url("../img/divider-test.svg"), url("../img/hero-background-another.webp");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/divider-test.svg"), url("../img/hero-background-another@2x.webp");
     }
-    // margin-bottom: 64px;
-    padding: 52px 46px 67px;
 
     @media (min-width: $tablet-width) {
       padding-top: 95px;
-      padding-bottom: 79px;
-      margin-bottom: 27px;
+      padding-bottom: 52px;
       background-size: auto, cover;
       background-image: url("../img/divider-test.svg"), url("../img/hero-background-tablet-another.webp");
 
@@ -53,8 +50,7 @@
 
     @media (min-width: $desktop-width) {
       padding-top: 100px;
-      padding-bottom: 84px;
-      margin-bottom: 77px;
+      padding-bottom: 56px;
       background-image: url("../img/divider-test.svg"), url("../img/hero-background-desktop-another.webp");
 
       @media (min-resolution: 2dppx) {
@@ -64,7 +60,6 @@
   }
 
   &--catalog-page {
-    margin-bottom: 0;
     padding: 52px 46px 67px;
     background-image: url("../img/divider-test.svg"), url("../img/hero-background-another.webp");
 
@@ -75,7 +70,6 @@
     @media (min-width: $tablet-width) {
       padding-top: 94px;
       padding-bottom: 118px;
-      margin-bottom: 28px;
       background-image: url("../img/divider-test.svg"), url("../img/hero-background-tablet-another.webp");
 
       @media (min-resolution: 2dppx) {
@@ -86,7 +80,6 @@
     @media (min-width: $desktop-width) {
       padding-top: 100px;
       padding-bottom: 122px;
-      margin-bottom: 60px;
       background-image: url("../img/divider-test.svg"), url("../img/hero-background-desktop-another.webp");
 
       @media (min-resolution: 2dppx) {
@@ -115,7 +108,7 @@
     @media (min-width: $tablet-width) {
       width: 457px;
       height: 78px;
-      margin-bottom: 37px;
+      margin-bottom: 65px;
     }
 
     @media (min-width: $desktop-width) {

@@ -9,23 +9,22 @@
   @media (min-width: $tablet-width) {
     border: none;
   }
-
-  // @media (min-width: $desktop-width) {
-  //   margin-bottom: ;
-  // }
 }
 
 .review__introduction-title {
-  padding-bottom: 24px;
+  margin: 0;
+  margin-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    padding-bottom: 21px;
+    padding-top: 27px;
+    margin-bottom: 6px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 33px;
+    padding-top: 78px;
+    margin-bottom: 17px;
   }
 }
 
@@ -34,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 435px;
-    margin-bottom: 2px;
+    margin-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {

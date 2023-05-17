@@ -29,10 +29,11 @@
 }
 
 .video__title {
-  margin-bottom: 27px;
+  margin: 0;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 32px;
+    margin-bottom: 18px;
   }
 }
 
@@ -100,7 +101,7 @@
     opacity: 0.3;
   }
 
-  &:hover {
+  &:focus {
     opacity: 0.7;
   }
 }
