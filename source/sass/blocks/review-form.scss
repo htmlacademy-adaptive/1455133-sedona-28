@@ -331,6 +331,7 @@
   width: 100%;
   border: 4px solid transparent;
   cursor: pointer;
+  outline: none;
 
   &:hover {
     background-color: $color-disabled-1;
@@ -438,6 +439,8 @@
 
 .review-form__label {
   position: relative;
+  cursor: pointer;
+  outline: none;
 
   &--user-data {
     margin-left: 16px;
@@ -528,6 +531,7 @@
 
 .review-form__label--sights:active .review-form__checkbox::after {
   background-image: url("../img/check-mark-active.svg");
+  outline: none;
 }
 
 .review-form__label:focus-within .review-form__checkbox::before,
