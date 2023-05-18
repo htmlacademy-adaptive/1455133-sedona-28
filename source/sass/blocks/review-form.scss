@@ -160,8 +160,8 @@
   list-style-type: none;
   row-gap: 16px;
   width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   &--choice {
     row-gap: 36px;
@@ -196,14 +196,14 @@
     margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 36px;
       column-gap: 11px;
+      padding: 0 36px;
       margin-bottom: 36px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 20px 0 55px;
       column-gap: 39px;
+      padding: 0 20px 0 55px;
       margin-bottom: 60px;
     }
   }
@@ -212,15 +212,15 @@
     margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
-      padding: 0 82px;
       column-gap: 32px;
+      padding: 0 82px;
       margin-bottom: 28px;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 230px);
-      padding: 0 0 0 45px;
       column-gap: normal;
+      padding: 0 0 0 45px;
       margin-bottom: 98px;
     }
   }
@@ -490,7 +490,7 @@
   }
 }
 
-.review-form__data:checked+.review-form__radio::after {
+.review-form__data:checked + .review-form__radio::after {
   width: 16px;
   height: 16px;
   background-color: $black-color-2;
@@ -502,7 +502,6 @@
   background-color: $color-disabled-1;
 }
 
-
 .review-form__label--impression:active .review-form__radio::before {
   background-color: $grey-color-4;
 }
@@ -511,7 +510,7 @@
   background-color: transparentize($color: $black-color-2, $amount: 0.7);
 }
 
-.review-form__data:checked+.review-form__checkbox::after {
+.review-form__data:checked + .review-form__checkbox::after {
   top: 5px;
   left: -6px;
   width: 22px;
@@ -522,7 +521,6 @@
 .review-form__label--sights:hover .review-form__checkbox::before {
   background-color: $color-disabled-1;
 }
-
 
 .review-form__label--sights:active .review-form__checkbox::before {
   background-color: $grey-color-4;

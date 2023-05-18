@@ -113,7 +113,6 @@
     position: inherit;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: main photo form logo academy;
     background-color: $white-color-1;
     color: $black-color-1;
   }

@@ -5,6 +5,12 @@
   line-height: 21px;
 }
 
+.page__body {
+  height: 100%;
+  margin: 0;
+  background-color: $white-color-2;
+}
+
 .page__container {
   min-height: 100%;
   min-width: 320px;
@@ -12,9 +18,4 @@
   margin: 0 auto;
   background-color: $white-color-1;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
-}
-
-.page__body {
-  margin: 0;
-  background-color: $white-color-2;
 }
