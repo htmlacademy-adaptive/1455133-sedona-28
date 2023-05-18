@@ -1,6 +1,6 @@
 .main-nav {
-  display: flex;
   position: relative;
+  display: flex;
   min-width: 320px;
   min-height: 56px;
   background-color: $white-color-1;
@@ -23,8 +23,8 @@
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: "";
   position: absolute;
+  content: "";
   top: 0;
   left: 0;
   width: 23px;
@@ -53,21 +53,13 @@
 
     &::before,
     &::after {
-      content: "";
       position: absolute;
+      content: "";
       top: 9px;
       left: -2px;
       width: 27px;
       height: 4px;
       background-color: $white-color-1;
-
-      &:hover {
-        background-color: transparentize($color: $white-color-1, $amount: 0.4);
-      }
-
-      &:active {
-        background-color: transparentize($color: $white-color-1, $amount: 0.3);
-      }
     }
 
     &::before {
@@ -92,6 +84,16 @@
   .main-nav--nojs .site-list__item {
     display: block;
   }
+
+  .main-nav__toggle {
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-nav__list {
@@ -99,7 +101,6 @@
   min-width: 320px;
   width: 100%;
   max-width: 1200px;
-  // min-height: 80vh;
   display: flex;
   flex-direction: column;
   z-index: 3;
@@ -107,13 +108,11 @@
   padding: 0;
   list-style-type: none;
   color: $white-color-1;
-  // background-color: $blue-color-1;
 
   @media (min-width: $tablet-width) {
     position: inherit;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: main photo form logo academy;
     background-color: $white-color-1;
     color: $black-color-1;
   }
@@ -205,10 +204,6 @@
       outline: none;
       background-color: $white-color-1;
     }
-
-    // &:focus {
-    //   outline: 3px solid $black-color-1;
-    // }
 
     &--current {
       color: $color-current;

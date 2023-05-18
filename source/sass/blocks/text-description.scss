@@ -7,18 +7,9 @@
   text-transform: uppercase;
   text-align: center;
   color: $black-color-2;
-  margin: 0;
 
   &--have-image {
     color: $white-color-1;
-  }
-
-  &--advantages-without-image {
-    margin-bottom: 12px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 16px;
-    }
   }
 
   &--card-description {
@@ -55,28 +46,10 @@
       width: 215px;
     }
   }
-
-  // // &--find-hotel {
-  // //   @media (min-width: $tablet-width) {
-  // //     margin-bottom: 2px;
-  // //   }
-  // }
 }
 
 br {
   @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-
-  // @media (min-width: $desktop-width) {
-  //   display: none;
-  // }
-
-  // display: none;
-}
-
-.advantages__text > br {
-  @media (min-width: $desktop-width) {
     display: none;
   }
 }
