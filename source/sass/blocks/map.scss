@@ -1,11 +1,48 @@
 .map__wrapper {
-  margin-bottom: 26px;
+  position: relative;
+  margin-bottom: 33px;
+  background-image: url("../img/map-background-mock.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 350px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 27px;
+    top: 46%;
+    left: 50%;
+    transform: translateX(-14px);
+    background-image: url("../img/map-marker.svg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-background-mock@2x.webp");
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+    background-image: url("../img/map-background-mock-tablet.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-background-mock-tablet@2x.webp");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/map-background-mock-desktop.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-background-mock-desktop@2x.webp");
+    }
   }
 }
 
 .map__item {
+  position: relative;
   width: 100%;
+  z-index: 2;
 }

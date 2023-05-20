@@ -92,8 +92,8 @@
                   <label class="text-description review-form__label review-form__label--user-data"
                     for="phone">Контактный
                     телефон*:</label>
-                  <input class="review-form__data review-form__data--user-data review-form__data--contacts"
-                    type="number" name="phone" id="phone" placeholder="Введите телефон" required>
+                  <input class="review-form__data review-form__data--user-data review-form__data--contacts" type="tel"
+                    name="phone" id="phone" placeholder="Введите телефон" required>
                 </li>
                 <li class="review-form__item review-form__item--contact review-form__item--email">
                   <label class="text-description review-form__label review-form__label--user-data"
@@ -112,7 +112,7 @@
                     <input class="review-form__data review-form__data--choice review-form__data--radio" type="radio"
                       name="impression" value="positive" checked>
                     <span class="review-form__radio"></span>
-                    <span class="review-form__value">Скорее положительное</span>
+                    <span class="review-form__value review-form__value--radio">Скорее положительное</span>
                   </label>
                 </li>
                 <li class="review-form__item review-form__item--choice">
@@ -120,7 +120,7 @@
                     <input class="review-form__data review-form__data--choice review-form__data--radio" type="radio"
                       name="impression" value="negative">
                     <span class="review-form__radio"></span>
-                    <span class="review-form__value review-form__value--negative">Скорее
+                    <span class="review-form__value review-form__value--radio review-form__value--negative">Скорее
                       отрицательное</span>
                   </label>
                 </li>
@@ -129,7 +129,7 @@
                     <input class="title review-form__data review-form__data--choice review-form__data--radio"
                       type="radio" name="impression" value="difficult">
                     <span class="review-form__radio"></span>
-                    <span class="review-form__value review-form__value--difficult">Затрудняюсь
+                    <span class="review-form__value review-form__value--radio review-form__value--difficult">Затрудняюсь
                       ответить</span>
                   </label>
                 </li>
@@ -144,7 +144,7 @@
                     <input class="review-form__data review-form__data--choice" type="checkbox" name="devils bridge"
                       id="devils-bridge" checked>
                     <span class="review-form__checkbox"></span>
-                    <span class="review-form__value">Мост Дьявола</span>
+                    <span class="review-form__value review-form__value--checkbox">Мост Дьявола</span>
                   </label>
                 </li>
                 <li class="review-form__item review-form__item--choice review-form__item--mountain-bell">
@@ -152,7 +152,7 @@
                     <input class="review-form__data review-form__data--choice" type="checkbox" name="mountain bell"
                       id="mountain-bell" checked>
                     <span class="review-form__checkbox"></span>
-                    <span class="review-form__value">Гора-Колокол</span>
+                    <span class="review-form__value review-form__value--checkbox">Гора-Колокол</span>
                   </label>
                 </li>
                 <li class="review-form__item review-form__item--choice review-form__item--slide-park">
@@ -160,7 +160,7 @@
                     <input class="review-form__data review-form__data--choice" type="checkbox" name="slide park"
                       id="slide-park" checked>
                     <span class="review-form__checkbox"></span>
-                    <span class="review-form__value">Слайд-парк</span>
+                    <span class="review-form__value review-form__value--checkbox">Слайд-парк</span>
                   </label>
                 </li>
                 <li class="review-form__item review-form__item--choice review-form__item--red-rocks">
@@ -168,7 +168,7 @@
                     <input class="review-form__data review-form__data--choice" type="checkbox" name="red rocks"
                       id="red-rocks">
                     <span class="review-form__checkbox"></span>
-                    <span class="review-form__value">Красные скалы</span>
+                    <span class="review-form__value review-form__value--checkbox">Красные скалы</span>
                   </label>
                 </li>
               </ul>

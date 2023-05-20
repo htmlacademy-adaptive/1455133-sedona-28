@@ -344,7 +344,7 @@
   }
 
   &--choice {
-    width: auto;
+    width: 0;
   }
 
   &--emotion {
@@ -352,8 +352,7 @@
     max-width: 90vw;
     height: 150px;
     box-sizing: border-box;
-    padding: 16px;
-    border: none;
+    padding: 14px;
     white-space: normal;
 
     @media (min-width: $tablet-width) {
@@ -439,6 +438,8 @@
 
 .review-form__label {
   position: relative;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   outline: none;
 
@@ -448,11 +449,8 @@
 }
 
 .review-form__value {
-  margin-left: 46px;
-
-  @media (min-width: $desktop-width) {
-    margin-left: 41px;
-  }
+  margin-left: 60px;
+  margin-right: 24px;
 }
 
 .review-form__radio {
@@ -469,8 +467,8 @@
     width: 46px;
     height: 46px;
     background-color: $white-color-2;
-    top: -12px;
-    left: -19px;
+    top: -24px;
+    left: 0;
   }
 }
 
@@ -484,8 +482,8 @@
   }
 
   &::before {
-    top: -10px;
-    left: -20px;
+    top: -22px;
+    left: 0;
     width: 46px;
     height: 46px;
     background-color: $white-color-2;
@@ -497,8 +495,8 @@
   width: 16px;
   height: 16px;
   background-color: $black-color-2;
-  top: 3px;
-  left: -4px;
+  top: -8px;
+  left: 15px;
 }
 
 .review-form__label--impression:hover .review-form__radio::before {
@@ -514,8 +512,8 @@
 }
 
 .review-form__data:checked + .review-form__checkbox::after {
-  top: 5px;
-  left: -6px;
+  top: -7px;
+  left: 12px;
   width: 22px;
   height: 16px;
   background-image: url("../img/check-mark.svg");
