@@ -77,11 +77,11 @@
   }
 
   .main-nav--nojs .main-nav__list {
-    position: static;
+    position: fixed;
     min-height: 0;
   }
 
-  .main-nav--nojs .site-list__item {
+  .main-nav--nojs .main-nav__list-item {
     display: block;
   }
 
@@ -113,29 +113,16 @@
     position: inherit;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    align-items: center;
     background-color: $white-color-1;
     color: $black-color-1;
+
+    &::after {
+      content: "";
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
   }
-}
-
-.main-nav__list-item--main-page {
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
-.main-nav__list-item--main-photo {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-
-.main-nav__list-item--form {
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-
-.main-nav__list-item--academy {
-  grid-column-start: 5;
-  grid-column-end: 6;
 }
 
 .main-nav__list-item {
@@ -166,9 +153,10 @@
 .main-nav__link {
   display: block;
   padding: 17px 0 12px 0;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;

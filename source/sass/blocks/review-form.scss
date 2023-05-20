@@ -236,7 +236,7 @@
 
   &--choice {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
   }
 
   &--contact::after {
@@ -320,7 +320,7 @@
 }
 
 .review-form__data {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -344,7 +344,7 @@
   }
 
   &--choice {
-    width: auto;
+    width: 0;
   }
 
   &--emotion {
@@ -352,8 +352,7 @@
     max-width: 90vw;
     height: 150px;
     box-sizing: border-box;
-    padding: 16px;
-    border: none;
+    padding: 14px;
     white-space: normal;
 
     @media (min-width: $tablet-width) {
@@ -380,7 +379,7 @@
 
 .review-form__help {
   display: block;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 12px;
   line-height: 21px;
   font-weight: 400;
@@ -439,6 +438,8 @@
 
 .review-form__label {
   position: relative;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   outline: none;
 
@@ -448,16 +449,12 @@
 }
 
 .review-form__value {
-  margin-left: 46px;
-
-  @media (min-width: $desktop-width) {
-    margin-left: 41px;
-  }
+  margin-left: 60px;
+  margin-right: 20px;
+  text-align: left;
 }
 
 .review-form__radio {
-  position: relative;
-
   &::before,
   &::after {
     position: absolute;
@@ -469,14 +466,12 @@
     width: 46px;
     height: 46px;
     background-color: $white-color-2;
-    top: -12px;
-    left: -19px;
+    top: -10px;
+    left: 0;
   }
 }
 
 .review-form__checkbox {
-  position: relative;
-
   &::before,
   &::after {
     position: absolute;
@@ -485,7 +480,7 @@
 
   &::before {
     top: -10px;
-    left: -20px;
+    left: 0;
     width: 46px;
     height: 46px;
     background-color: $white-color-2;
@@ -497,8 +492,8 @@
   width: 16px;
   height: 16px;
   background-color: $black-color-2;
-  top: 3px;
-  left: -4px;
+  top: 5px;
+  left: 15px;
 }
 
 .review-form__label--impression:hover .review-form__radio::before {
@@ -515,7 +510,7 @@
 
 .review-form__data:checked + .review-form__checkbox::after {
   top: 5px;
-  left: -6px;
+  left: 12px;
   width: 22px;
   height: 16px;
   background-image: url("../img/check-mark.svg");
